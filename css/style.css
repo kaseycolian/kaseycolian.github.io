@@ -24,14 +24,6 @@ h1{
 	font-size: 1.7em;
 }
 
-.side__name{
-	margin-bottom: 1.6em;
-	width: 6.6em;
-	border-bottom: solid white;
-	/*padding-bottom: -2px;*/
-	border-width: 2px;
-	color: white;
-}
 header{ 
 	grid-column-start:1;
 	grid-column-end: -1;
@@ -60,7 +52,7 @@ header{
 }
 .container{
 	display: grid;
-	grid-template-columns: 250px auto;
+	grid-template-columns: 250px 1fr;
 	background-color: grey;
 	margin-left: 15em;
 
@@ -88,10 +80,15 @@ aside{
 	height: 100%;
 	font-size: 1.75em;
 	padding: .3em;
-
-
 }
-
+.side__name{
+	margin-bottom: 1.6em;
+	width: 6.65em;
+	border-bottom: solid white;
+	/*padding-bottom: -2px;*/
+	border-width: 2px;
+	color: white;
+}
 article{
 	display: grid;
 	/*grid-template-columns: repeat(3, 1fr);*/
