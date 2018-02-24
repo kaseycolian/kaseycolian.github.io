@@ -19,6 +19,13 @@ a:visited{
 a:hover{
 	color: white;
 }
+.side__name{
+	margin-bottom: 1.6em;
+	width: 6.6em;
+	border-bottom: solid black;
+	/*padding-bottom: -2px;*/
+	border-width: 2px;
+}
 header{
 	justify-content: center;
 	grid-column-start:1;
@@ -41,6 +48,9 @@ img{
 main{
 	background-color: violet;
 }
+aside li{
+	margin-bottom: .9em;
+}
 
 aside{
 	display: flex;
@@ -54,15 +64,14 @@ aside{
 	font-size: 1.75em;
 	padding: .3em;
 
-}
-aside p{
-	text-align: space-between;
-	margin-bottom: 25px;
-	/*border-bottom-style: solid;
-	border-bottom-color: black;
-	border-width: 1px;*/
 
 }
+/*aside p{
+	text-align: space-between;
+	margin-bottom: 25px;
+
+
+}*/
 article{
 	display: grid;
 	/*grid-template-columns: repeat(3, 1fr);*/
