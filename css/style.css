@@ -1,10 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Khula');
+
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: #BB2AD1;
+	/*background-color: #BB2AD1;*/
+	font-family:  'Khula', sans-serif;
 }
 
 a:link {
-    text-decoration: none;
+	text-decoration: none;
+	color: lime;
+}
+a:visited{
+	color: yellow;
+}
+a:hover{
+	color: white;
+}
+.container{
+	display: grid;
+	grid-template-columns: 250px auto;
+	background-color: grey;
+	margin-left: 15em;
+
+}
+img{
+	max-height: 500px;
+	max-width: 500px;
+}
+
+aside{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/*align-items: center;*/
+	background-color: pink;
+	position: fixed;
+	left: 0;
+	width: 15rem;
+	height: 100%;
+	font-size: 1.75em;
+	padding: .3em;
+
+}
+footer{
+	background-color: lightgrey;
 }
