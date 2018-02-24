@@ -14,24 +14,37 @@ a:link {
 	color: lime;
 }
 a:visited{
-	color: yellow;
+	color: lightgrey;
 }
 a:hover{
 	color: white;
 }
+
+h1{
+	font-size: 1.7em;
+}
+header h1{
+	font-size: 2.0em;
+}
 .side__name{
 	margin-bottom: 1.6em;
 	width: 6.6em;
-	border-bottom: solid black;
+	border-bottom: solid white;
 	/*padding-bottom: -2px;*/
 	border-width: 2px;
+	color: white;
 }
 header{
-	justify-content: center;
+	
 	grid-column-start:1;
 	grid-column-end: -1;
-	background-color: darkslategrey;
-
+	background-color: #67979B;
+/*	display: flex;
+align-items: center;
+justify-content: center;*/
+display: grid;
+/*align-items: center;*/
+justify-content: center;
 }
 .container{
 	display: grid;
@@ -56,7 +69,7 @@ aside{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: pink;
+	background-color: #236167;
 	position: fixed;
 	left: 0;
 	width: 15rem;
@@ -66,21 +79,16 @@ aside{
 
 
 }
-/*aside p{
-	text-align: space-between;
-	margin-bottom: 25px;
 
-
-}*/
 article{
 	display: grid;
 	/*grid-template-columns: repeat(3, 1fr);*/
 	background-color: dodgerblue;
-
 }
 
+
 footer{
-	background-color: lightgrey;
+	background-color: darkgrey;
 	grid-column-start:1;
 	grid-column-end: -1;
 }
