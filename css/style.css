@@ -18,6 +18,13 @@ a:visited{
 a:hover{
 	color: white;
 }
+header{
+	justify-content: center;
+	grid-column-start:1;
+	grid-column-end: -1;
+	background-color: darkslategrey;
+
+}
 .container{
 	display: grid;
 	grid-template-columns: 250px auto;
@@ -29,6 +36,10 @@ img{
 	max-height: 500px;
 	max-width: 500px;
 }
+main{
+	background-color: violet;
+display:
+;}
 
 aside{
 	display: flex;
@@ -44,6 +55,14 @@ aside{
 	padding: .3em;
 
 }
+article{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+		background-color: dodgerblue;
+}
+
 footer{
 	background-color: lightgrey;
+	grid-column-start:1;
+	grid-column-end: -1;
 }
