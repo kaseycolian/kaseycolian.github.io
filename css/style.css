@@ -4,8 +4,9 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/*background-color: #BB2AD1;*/
 	font-family:  'Khula', sans-serif;
+	max-width: 100vw;
+
 }
 
 a:link {
@@ -31,6 +32,7 @@ header{
 	background-color: grey;
 	margin-left: 15em;
 
+
 }
 img{
 	max-height: 500px;
@@ -38,14 +40,12 @@ img{
 }
 main{
 	background-color: violet;
-display:
-;}
+}
 
 aside{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/*align-items: center;*/
 	background-color: pink;
 	position: fixed;
 	left: 0;
@@ -55,10 +55,19 @@ aside{
 	padding: .3em;
 
 }
+aside p{
+	text-align: space-between;
+	margin-bottom: 25px;
+	/*border-bottom-style: solid;
+	border-bottom-color: black;
+	border-width: 1px;*/
+
+}
 article{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-		background-color: dodgerblue;
+	/*grid-template-columns: repeat(3, 1fr);*/
+	background-color: dodgerblue;
+
 }
 
 footer{
