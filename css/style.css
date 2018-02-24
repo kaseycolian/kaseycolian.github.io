@@ -54,7 +54,7 @@ header{
 	display: grid;
 	grid-template-columns: 250px 1fr;
 	background-color: grey;
-	margin-left: 15em;
+	margin-left: 14.5em;
 
 
 }
@@ -76,10 +76,11 @@ aside{
 	background-color: #236167;
 	position: fixed;
 	left: 0;
-	width: 15rem;
+	width: 14.5rem;
 	height: 100%;
 	font-size: 1.75em;
 	padding: .3em;
+	flex-wrap: wrap;
 }
 .side__name{
 	margin-bottom: 1.6em;
