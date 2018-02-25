@@ -27,7 +27,7 @@ h1{
 .container{
 	display: grid;
 	grid-template-columns: 230px auto;
-	/*grid-template-rows: 115px auto 40px;*/
+	grid-template-rows: 115px auto 40px;
 	background-color: blue;
 	/*margin-left: 14.5em;*/
 
