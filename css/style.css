@@ -24,14 +24,39 @@ h1{
 	font-size: 1.7em;
 }
 
+.container{
+	display: grid;
+	grid-template-columns: 230px auto;
+	grid-template-rows: 115px auto 40px;
+	background-color: blue;
+	/*margin-left: 14.5em;*/
+
+}
+aside{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #236167;
+	position: fixed;
+	left: 0;
+	width: 230px;
+	height: 100%;
+	font-size: 1.75em;
+	padding: .3em;
+	flex-wrap: wrap;
+}
+
+.inner{
+	display: grid;
+	grid-column-start:0;
+	grid-column-end: -1;
+}
+
 header{ 
-	grid-column-start:1;
+	grid-column-start:0;
 	grid-column-end: -1;
 	background-color: #67979B;
-	
-	/*align-items: center;*/
 	display: flex;
-	/*justify-content: space-between;*/
 	flex-direction: column;
 	align-items: center;
 	/*align-self: center;*/
@@ -50,14 +75,19 @@ header{
 	/*align-self: center;*/
 	/*justify-content: space-between;*/
 }
-.container{
-	display: grid;
-	grid-template-columns: 250px 1fr;
-	background-color: grey;
-	margin-left: 14.5em;
-
+.bio{
+	display: flex;
+	justify-content: space-around;
+	margin-left: 1em;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+.salutation{
+	align-self: center;
+	margin-right: 3em;
 
 }
+
 img{
 	max-height: 500px;
 	max-width: 500px;
@@ -65,23 +95,12 @@ img{
 main{
 	background-color: violet;
 }
+
+
 aside li{
 	margin-bottom: .9em;
 }
 
-aside{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	background-color: #236167;
-	position: fixed;
-	left: 0;
-	width: 14.5rem;
-	height: 100%;
-	font-size: 1.75em;
-	padding: .3em;
-	flex-wrap: wrap;
-}
 .side__name{
 	margin-bottom: 1.6em;
 	width: 6.65em;
@@ -91,9 +110,14 @@ aside{
 	color: white;
 }
 article{
-	display: grid;
+	/*display: grid;*/
 	/*grid-template-columns: repeat(3, 1fr);*/
 	background-color: dodgerblue;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .contactinfo img{
@@ -102,9 +126,20 @@ article{
 }
 
 footer{
+	align-items: center;
 	background-color: darkgrey;
-	grid-column-start:1;
+	grid-column-start:0;
 	grid-column-end: -1;
+	flex-wrap: wrap;
 	display: flex;
 	justify-content: space-between;
+	padding-left:.5em;
+	padding-right: .5em;
+
+
+}
+.home__link__footer{
+
+	margin-left: 12em;
+
 }
