@@ -229,6 +229,10 @@ article h1{
 	border-bottom:.20em solid var(--blue);
 }
 
+.project img{
+	box-shadow: .15em .15em darkgrey;
+}
+
 .btn a:link{
 	color: darkgrey;
 }
