@@ -11,6 +11,11 @@
     	display: flex;
     	flex-wrap: wrap;
     }
+    footer{
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    }
 }
 
 *{
