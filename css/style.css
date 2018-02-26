@@ -11,11 +11,16 @@
     	display: flex;
     	flex-wrap: wrap;
     }
-    /*footer{
+/*    footer{
     	display: flex;
       	justify-content: center;
     	flex-wrap: wrap;
     }*/
+
+    .home__link__footer{
+    	display: flex;
+    	justify-content: space-between;
+    }
 
     aside ul{
     	top: 1em; 
