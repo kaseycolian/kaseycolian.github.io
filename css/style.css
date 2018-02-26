@@ -48,7 +48,7 @@ aside{
 	left: 0;
 	width: 175px;
 	height: 100%;
-	font-size: 1.35em;
+	font-size: 1.25em;
 	padding: .3em;
 	flex-wrap: wrap;
 	grid-column-end:1;
@@ -61,7 +61,7 @@ aside{
 	border-bottom: solid grey;
 	border-width: 2px;
 	color: white;
-	font-size: 1.15em;
+	font-size: 1.20em;
 }
 
 header{ 
@@ -77,7 +77,6 @@ header{
 	font-size: 1.7em;
 	margin-top: .5em;
 }
-
 .header__role{
 	margin-top:-.2em;
 }
@@ -114,7 +113,6 @@ main{
 	background-color: white;
 }
 
-
 .skills{
 	margin-bottom: 2em;
 	display: flex;
@@ -124,7 +122,7 @@ main{
 }
 
 .skills h1{
-	margin-top: 1.5em;
+	margin-top: 1.7em;
 }
 
 .skills ul{
@@ -134,7 +132,6 @@ main{
 	flex-wrap: wrap;
 	font-size: 1.25em;
 	margin-top: .5em;
-
 }
 
 .skills li{
@@ -146,7 +143,6 @@ main{
 	width: 7em;
 	height: 7em;
 	margin-right: .5em;
-
 }
 
 .contactinfo{
@@ -169,8 +165,8 @@ main{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-top: 1.75em;
-	margin-bottom: 2em;
+	margin-top: 1.55em;
+	margin-bottom: 3em;
 	flex-wrap: wrap;
 }
 
@@ -178,8 +174,23 @@ main{
 	color: var(--blue);
 }
 
+.contact__links a:hover{
+	color: #0044A9;
+}
+
+.contact__links a:visited{
+	color: darkgrey;
+}
 footer a:link{
 	color: var(--blue);
+}
+
+footer a:hover{
+	color: #0044A9;
+}
+
+footer a:visited{
+	color:darkgrey;
 }
 
 aside li{
@@ -209,12 +220,11 @@ article h1{
 }
 
 .project:before{
-  content : "";
-  left    : 25%;
-  /*margin-top: 1.7em;*/
-  margin-bottom: 1.7em;
-  width   : 30%;
-  border-bottom:.20em solid var(--blue);
+	content: "";
+	left: 25%;
+	margin-bottom: 1.7em;
+	width: 30%;
+	border-bottom:.20em solid var(--blue);
 }
 
 .btn a:link{
@@ -238,7 +248,6 @@ article h1{
 
 footer{
 	align-items: center;
-	/*background-color: lightgrey;*/
 	grid-column-start:0;
 	grid-column-end: -1;
 	flex-wrap: wrap;
