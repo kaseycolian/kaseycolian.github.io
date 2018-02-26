@@ -19,9 +19,9 @@
 
     .home__link__footer{
     	display: flex;
-    	justify-content: space-between;
+    	justify-content: spa/*c*/e-between;
     	align-items: center;
-    	flex-wrap: wrap;
+    	flex-wrap: nowrap;
     }
 
     aside ul{
