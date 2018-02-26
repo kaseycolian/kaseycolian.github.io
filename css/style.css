@@ -20,6 +20,7 @@
     .home__link__footer{
     	display: flex;
     	justify-content: space-between;
+    	align-items: center;
     }
 
     aside ul{
