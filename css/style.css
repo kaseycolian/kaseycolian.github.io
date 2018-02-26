@@ -17,6 +17,10 @@
     	justify-content: center;
     	flex-wrap: wrap;
     }
+
+    aside ul{
+    	top: 1em; 
+    }
 }
 
 *{
@@ -226,11 +230,11 @@ article h1{
 }
 
 .btn a:link{
-	color: #0B2957;
+	color: darkgrey;
 }
 
 .btn a:hover{
-	color: (--blue);
+	color: lightgrey;
 }
 
 .btn a:visited{
