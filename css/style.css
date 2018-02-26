@@ -2,7 +2,7 @@
 @media only screen and (max-width: 500px) {
     .bio {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
     }
 }
@@ -106,7 +106,7 @@ header{
 	margin-left: 4.2em;
 	margin-right: 4em;
 	margin-top: 5.5em;
-	margin-bottom: 5.4em;
+	margin-bottom: 6.3em;
 }
 
 .salutation{
@@ -131,7 +131,6 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*justify-content: center;*/
 }
 
 .skills h1{
@@ -221,7 +220,7 @@ article h1{
 }
 
 .btn a:hover{
-	color: darkgrey;
+	color: (--blue);
 }
 
 .btn a:visited{
@@ -230,9 +229,11 @@ article h1{
 
 .btn {
 	background-color: grey;
-	padding: .8em;
-	border-radius: 1.5em;
+	padding: .5em;
+	width: 12em;
+	border-radius: 1em;
 	font-size: .8em;
+	text-align: center;
 }
 
 footer{
