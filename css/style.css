@@ -18,13 +18,13 @@
 
 a:link {
 	text-decoration: none;
-	color: white;
+	color: var(--blue);
 }
 a:visited{
 	color: darkgrey;
 }
 a:hover{
-	color: lightgrey;
+	color: #0044A9;
 }
 
 h1{
@@ -39,6 +39,17 @@ h1{
 	grid-gap: .05em;
 }
 
+aside a:link{
+	color: white;
+}
+
+aside a:hover{
+	color: lightgrey;
+}
+
+aside a:visited{
+	color: darkgrey;
+}
 aside{
 	display: flex;
 	flex-direction: column;
@@ -169,30 +180,6 @@ main{
 	margin-bottom: 3em;
 	flex-wrap: wrap;
 }
-
-.contact__links a:link{
-	color: var(--blue);
-}
-
-.contact__links a:hover{
-	color: #0044A9;
-}
-
-.contact__links a:visited{
-	color: darkgrey;
-}
-footer a:link{
-	color: var(--blue);
-}
-
-footer a:hover{
-	color: #0044A9;
-}
-
-footer a:visited{
-	color:darkgrey;
-}
-
 aside li{
 	margin-bottom: .9em;
 }
