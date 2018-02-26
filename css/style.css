@@ -5,6 +5,10 @@
         flex-direction: row-reverse;
         flex-wrap: wrap;
     }
+    .image {
+    	display: flex;
+    	flex-wrap: wrap;
+    }
 }
 
 *{
