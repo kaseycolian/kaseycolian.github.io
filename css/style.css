@@ -13,7 +13,7 @@
     }
     footer{
     	display: flex;
-    	flex-direction: column;
+    	/*flex-direction: column;*/
     	justify-content: center;
     	flex-wrap: wrap;
     }
@@ -238,7 +238,7 @@ article h1{
 }
 
 .btn {
-	background-color: grey;
+	background-color: #0b2957;
 	padding: .5em;
 	width: 12em;
 	border-radius: 1em;
