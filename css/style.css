@@ -11,12 +11,11 @@
     	display: flex;
     	flex-wrap: wrap;
     }
-    footer{
+   /* footer{
     	display: flex;
-    	/*flex-direction: column;*/
-    	justify-content: center;
+      	justify-content: center;
     	flex-wrap: wrap;
-    }
+    }*/
 
     aside ul{
     	top: 1em; 
