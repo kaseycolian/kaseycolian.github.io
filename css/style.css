@@ -2,7 +2,8 @@
 @media only screen and (max-width: 500px) {
     .bio {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
@@ -34,7 +35,7 @@ h1{
 
 .container{
 	display: grid;
-	grid-template-columns: 195px auto;
+	grid-template-columns: 185px auto;
 	grid-template-rows: 115px auto 40px;
 	background-color: white;
 	grid-gap: .05em;
@@ -58,7 +59,7 @@ aside{
 	background-color: #0B2957;
 	position: fixed;
 	left: 0;
-	width: 195px;
+	width: 185px;
 	height: 100%;
 	font-size: 1.25em;
 	padding: .3em;
@@ -102,17 +103,17 @@ header{
 .bio{
 	display: flex;
 	justify-content: space-around;
-	margin-left: 4em;
+	margin-left: 4.2em;
 	margin-right: 4em;
 	margin-top: 5.5em;
-	margin-bottom: 5.0em;
+	margin-bottom: 5.4em;
 }
 
 .salutation{
 	align-self: center;
 	margin-right: 3em;
 	flex-wrap: wrap;
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 img{
