@@ -18,8 +18,8 @@
     }*/
 
     .home__link__footer{
-    	display: flex;
-    	justify-content: spa/*c*/e-between;
+    	/*display: flex;*/
+    	/*justify-content: space-between;*/
     	align-items: center;
     	flex-wrap: nowrap;
     }
