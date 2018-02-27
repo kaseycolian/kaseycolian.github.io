@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Khula');
 @media only screen and (max-width: 500px) {
     .bio {
@@ -11,20 +12,10 @@
     	display: flex;
     	flex-wrap: wrap;
     }
-    footer{
-    	display: block;
-     
-    }
-    .home__link__footer{
-	margin-left: 0em;
-}
-
-    /*.home__link__footer{
-    	/*display: flex;*/
-    	
-    	justify-content: space-between;
-    	align-items: flex-end;
-    	flex-wrap: nowrap;
+    /*footer{
+    	display: flex;
+      	justify-content: center;
+    	flex-wrap: wrap;
     }*/
 
     aside ul{
