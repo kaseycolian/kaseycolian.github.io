@@ -5,8 +5,8 @@
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        margin-right: 1em;
-        margin-left: 1em;
+        margin-right: .25em;
+        margin-left: .25em;
     }
     .image {
     	display: flex;
@@ -14,7 +14,10 @@
     }
     footer{
     	/*display: flex;*/
-      	display: block;
+      	display: initial;
+      		grid-column-start:0;
+	grid-column-end: -1;
+	text-align: center;
       	
      }
 
@@ -53,7 +56,9 @@ h1{
 	grid-template-rows: 115px auto 40px;
 	background-color: white;
 	grid-gap: .05em;
+	
 }
+
 
 aside a:link{
 	color: white;
@@ -73,6 +78,7 @@ aside{
 	background-color: #0B2957;
 	position: fixed;
 	left: 0;
+	top: 0;
 	width: 185px;
 	height: 100%;
 	font-size: 1.25em;
@@ -92,14 +98,17 @@ aside{
 }
 
 header{ 
-	grid-column-start:0;
+	grid-column-start:1;
 	grid-column-end: -1;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+.header, .inner, {
+background-image: url("C:/users/wecancodeit/wcci/code/kaseycolian.github.io/static/images/keyboard.jpg");
 
+}
 .header__name{
 	font-size: 1.7em;
 	margin-top: .5em;
@@ -121,6 +130,7 @@ header{
 	margin-right: 4em;
 	margin-top: 5.5em;
 	margin-bottom: 6.3em;
+
 }
 
 .salutation{
