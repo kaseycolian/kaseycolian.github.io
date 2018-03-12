@@ -4,102 +4,145 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Kasey Colian</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
 </title>
 </head>
 <body>
 	<div class="container">
 		<header>
-			<a name= "homelink"></a>
-			<div class="header__name">
-				<h1>Kasey Colian</h1>
-			</div>
-			<div class="header__role">
-				<h2>Junior Software Developer</h2>
+			<div class = "header">
+				<a name= "homelink"></a>
+				<div class="header__name">
+					<h1>Kasey Colian</h1>
+				</div>
+				<div class="header__role">
+					<h2>Junior Software Developer</h2>
+				</div>
 			</div>
 		</header>
 
-		<aside>
-			<nav>
-				<div class="side__name">
-					Kasey Colian
-				</div>
-				<ul>
-					<li><a href="#biolink">About Me</a></li>
-					<li><a href="#skillslink">Tech Skills</a></li>
-					<li><a href="#contactinfolink">Contact Methods</a></li>
-					<li><a href="#projectslink">Past Projects</a></li>
-					<li><a href="#homelink">Back to the Start</a></li>
-				</ul>
-			</nav>
-		</aside>
+		
 		<div class="inner">
 			<a name = "biolink"></a>
-			<Main>
+			<main>
 				
 				<section class = bio>
 					<div class="salutation">
 						<h1>About me</h1>
 						<p>Junior software developer who believes the world is a village and we each have our roles to make a better life for all.  My passion, my role, is optimizing user experience. Software development and front-end design provide an outlet that allow me to create products which revolve around human intuition.   Currently enrolled at We Can Code IT!, a submersive 14-week program focusing on Java, TDD, web-design using grid, Flexbox, CSS, as well as Javascript. I obtained a bachelor's degree in Psychology focused in cognitive development, which helps provide insight on real-world user mentality.</p>
 					</div>
-					<div class="image">
+					<div class="bioImage">
 						<img src="static/images/kaseytwo.jpg" alt="Kasey Colian"> 
 					</div>
 				</section>
 				<a name="skillslink"></a>
 				<section class = skills>
-					<h1>Skillset</h1>
-					<ul>
-						<li>Java</li>
-						<li>CSS</li>
-						<li>TDD</li>
-						<li>Flexbox</li>
-						<li>Spring MVC</li>
-						<li>Eclipse</li>
-					</ul>
-				</section>
-				<section class = contactinfo>
-					<a name="contactinfolink"></a>
-					<h1>Contact Information</h1>
-					<div class="contact__links">
-						<a href="https://github.com/kaseycolian"><img src="static/images/Octocat.png" alt="GitHub Account">https://github.com/kaseycolian</a>			
-						<a href="https://www.linkedin.com/in/kaseycolian/"><img src="static/images/linked.png" alt="LinkedIn Profile">https://www.linkedin.com/in/kaseycolian</a>
-						<a href="mailto:kaseycolian@gmail.com"><img src="static/images/email.png" alt="Email Address">kaseycolian@gmail.com</a>
+					<section class = toggle-open>
+						<h1>Skillset</h1>
+						<ul>
+							<li>Java</li>
+							<li>CSS</li>
+							<li>TDD</li>
+							<li>Flexbox</li>
+							<li>Spring MVC</li>
+							<li>Eclipse</li>
+						</ul>
+					</section>
+					<section class = contactinfo>
+						<a name="contactinfolink"></a>
+						<h2>Contact Information</h2>
+						<div class="contact__links">
+							<a href="https://github.com/kaseycolian"><img src="static/images/Octocat.png" alt="GitHub Account">https://github.com/kaseycolian</a>			
+							<a href="https://www.linkedin.com/in/kaseycolian/"><img src="static/images/linked.png" alt="LinkedIn Profile">https://www.linkedsin.com/in/kaseycolian</a>
+							<a href="mailto:kaseycolian@gmail.com"><img src="static/images/email.png" alt="Email Address">kaseycolian@gmail.com</a>
+						</div>
+					</section>
+				</main>
+
+
+				<article>
+					<a name="projectslink"></a>
+					<div class = "projectHead">
+						<h2>GitHub Projects</h2>
 					</div>
-				</section>
-			</Main>
+					<div class = "carousel">
+						<a class="right">Previous Project</a>
+						
+						<article class="project">
 
+							<div class="showSlide"> 
+								<img src="static/images/reviews-java.jpg" alt="Screenshot of Reviews Project"><br>
+								<div class="content">
+									<h3>Music Reviews</h3>
+									<button class="projectDetails">Show Project Details</button>
+									<div id="projectContent" style="visibility: hidden;">
+										<p> Music Reviews is a website created through SpringMVC with Thymeleaf.  The back was written in Java using TDD.  Musical artists were entered into a HashMap with different instance variables being accessed by the front HTML templates.  HTML templates were created for the index page and review pages.  Images and videos related to the band were embedded in each review.</p>
+										<button class="btn"><a href="https://github.com/kaseycolian/reviews">See Full Project Here</a></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="project">
+							<div class="showSlide">  
+								<img src="static/images/lair-amok-java.jpg" alt="Screenshot of Medieval Lair Amok Project"><br>
+								<div class="content">
+									<h3>Virtual Medieval Lair Amok</h3>
+									<button class="projectDetails">Show Project Details</button>
+									<div id="projectContent" style="visibility: hidden;">
+										<p>Upgraded version of Virtual Medieval Lair.  Written in Java with TDD.  Implemented interfaces and extended classes to create different abilities for different types of creatures using polymorphism.  Game started with an already-programmed list of creatures and allowed the game player to add or remove creature. Introduced new levels that the game player needed to help control.</p>
+										<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-amok">See Full Project Here</a></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="project">
+							<div class="showSlide">
+								<img src="static/images/previous-lair-java.jpg" alt="Screenshot of Virtual Medieval Lair Project"><br>
+								<div class="content">
+									<h3>Virtual Medieval Lair</h3>
+									<button class="projectDetails">Show Project Details</button>
+									<div id="projectContent" style="visibility: hidden;">
+										<p>Previous version of Virtual Medieval Lair Amok.  Written in Java with TDD.  User participated in a game taking care of creatures at The Lair.  The creatures were stored in a HashMap via name as the key.  Players were able to care for the different creatures, which effect different levels simultaneously.  Starting levels were encapsulated. Game players were able to add and remove creatures.</p>
+										<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-shelter">See Full Project Here</a></button>
+									</div>
+								</div>
+							</article>
+							<a class="left">Next Project</a>  
+						</div>
 
-			<article>
-				<a name="projectslink"></a>
-				<h1>GitHub Projects</h1>
-				<article class="project">
-					<h2>Music Reviews</h2>
-					<p> Music Reviews is a website created through SpringMVC with Thymeleaf.  The back was written in Java using TDD.  Musical artists were entered into a HashMap with different instance variables being accessed by the front HTML templates.  HTML templates were created for the index page and review pages.  Images and videos related to the band were embedded in each review.</p>
-					<img src="static/images/reviews-java.jpg" alt="Screenshot of Reviews Project"><br>
-					<button class="btn"><a href="https://github.com/kaseycolian/reviews">See Full Project Here</a></button>
+					</div>
+
 				</article>
-				<article class="project">
-					<h2>Virtual Medieval Lair Amok</h2>
-					<p>Upgraded version of Virtual Medieval Lair.  Written in Java with TDD.  Implemented interfaces and extended classes to create different abilities for different types of creatures using polymorphism.  Game started with an already-programmed list of creatures and allowed the game player to add or remove creature. Introduced new levels that the game player needed to help control.</p>
-					<img src="static/images/lair-amok-java.jpg" alt="Screenshot of Medieval Lair Amok Project"><br>
-					<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-amok">See Full Project Here</a></button>
-				</article>
-				<article class="project">
-					<h2>Virtual Medieval Lair</h2>
-					<p>Previous version of Virtual Medieval Lair Amok.  Written in Java with TDD.  User participated in a game taking care of creatures at The Lair.  The creatures were stored in a HashMap via name as the key.  Players were able to care for the different creatures, which effect different levels simultaneously.  Starting levels were encapsulated. Game players were able to add and remove creatures.</p>
-					<img src="static/images/previous-lair-java.jpg" alt="Screenshot of Virtual Medieval Lair Project"><br>
-					<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-shelter">See Full Project Here</a></button>
-				</article>
-			</article>
-		</div>
-		<footer>
-			<p>2018</p>
-			<div class="home__link__footer">
-				<a href="#homelink">Back to the start</a>
+				<aside>
+					<nav>
+						<div id="navigation" style="visibility: visible;">
+							<ul>
+								<li><h2>Kasey Colian</h2></li>
+								<li><a id="modalLink" href="#biolink">About Me</a></li>
+								<li><a href="#skillslink">Tech Skills</a></li>
+								<li><a href="#contactinfolink">Contact Methods</a></li>
+								<li><a href="#projectslink">Past Projects</a></li>
+								<li><a href="#homelink">Back to the Start</a></li>
+							</ul>
+						</div>
+					</nav>
+				</aside>
 			</div>
-			<p>Website written in HTML5 using CSS with Grid and Flexbox</p>
-		</footer>
-	</div>
-</body>
-</html>
+			<footer>
+				<p>2018</p>
+				<div class="home__link__footer">
+					<a href="#homelink">Back to the start</a>
+				</div>
+				<p>Website written with HTML Grid, Flexbox, and JavaScript</p>
+			</footer>
+		</div>
+		<div id="modalBox" class="modal">
+			<div class="modal-content">
+				<span class="close">&times</span>
+				Junior software developer who believes the world is a village and we each have our roles to make a better life for all.  My passion, my role, is optimizing user experience. Software development and front-end design provide an outlet that allow me to create products which revolve around human intuition.   Currently enrolled at We Can Code IT!, a submersive 14-week program focusing on Java, TDD, web-design using grid, Flexbox, CSS, as well as Javascript. I obtained a bachelor's degree in Psychology focused in cognitive development, which helps provide insight on real-world user mentality.
+			</div>
+
+		</div>
+		<script src="./src/js/portfolioApp.js"></script>
+	</body>
+	</html>
