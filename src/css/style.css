@@ -55,6 +55,9 @@ a:hover{
 h1{
 	font-size: 1.7em;
 }
+h2{
+	color: grey;
+}
 
 .container{
 	display: grid;
@@ -122,7 +125,7 @@ nav{
 	font-size: 1.25rem;
 	color: #BF46E1;
 	border-radius: .25rem;
-	border: darkgrey;
+	border: solid #BF46E1 .1rem;
 
 }
 .side__name{
