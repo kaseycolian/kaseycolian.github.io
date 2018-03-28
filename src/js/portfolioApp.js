@@ -47,6 +47,17 @@ showButton.addEventListener('click', function(){
 	footer.style.paddingLeft = "15rem";
 
 });
+showButton.addEventListener('mouseenter', function(){
+
+    showButton.style.transform = "rotate(23.5deg)"; 
+    showButton.style.transition = "1s";
+
+});
+
+showButton.addEventListener('mouseout', function(){
+	showButton.style.transform = "rotate(0deg)";
+	showButton.style.transition = "1s";
+});
 
 //modal box
 const modal = document.getElementById('modalBox');
@@ -60,6 +71,7 @@ modalLink.addEventListener("click", function (){
 closeLink.addEventListener("click", function() {
 	modal.style.display = "none";
 });
+
 
 
 //project carousel
@@ -125,4 +137,6 @@ listItems.forEach(function(listItem) {
 		this.style.fontSize = '1.2rem';
 	})
 })
+
+
 

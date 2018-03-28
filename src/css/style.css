@@ -115,7 +115,7 @@ nav{
 
 }
 
-#show-button{
+.show-nav-button{
 	position: fixed;
 	right: 1rem;
 	top: 10rem;
@@ -126,8 +126,11 @@ nav{
 	color: #BF46E1;
 	border-radius: .25rem;
 	border: solid #BF46E1 .1rem;
-
 }
+.change .show-nav-button{
+	 transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 .side__name{
 	margin-bottom: 1.6em;
 	width: 6.65em;
