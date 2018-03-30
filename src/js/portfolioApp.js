@@ -46,24 +46,20 @@ showButton.addEventListener('click', function(){
 	navigation.style.display = "block";
 	inner.style.marginLeft = "0rem";
 	footer.style.paddingLeft = "15rem";
-	// header.style.marginLeft = "3rem";
 	document.getElementById('show-button').style.display = "none";
 	showButton.style.transition="2s";
 });
 showButton.addEventListener('mouseenter', function(){
-    // showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(.95)";
     showButton.style.transform="scale(.90)";
     showButton.style.right=".25rem";
     showButton.style.transition = ".5s";
     showButton.style.fontSize="1.37rem";
     showButton.style.fontWeight="bold";
-    // showButton.style.right="1rem";
     showButton.transitionTimingFunction="ease";
 
 });
 
 showButton.addEventListener('mouseout', function(){
-	// showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(1.0)";
 	showButton.style.transform = "rotate(0deg) scale(1)";
 	showButton.style.transition = "3s";
 	showButton.style.fontSize="1.5rem";
@@ -71,6 +67,16 @@ showButton.addEventListener('mouseout', function(){
 	showButton.style.right=".25rem";
 	showButton.style.position="block";
 });
+//navigation links resizing
+const listItems = document.querySelectorAll('nav ul li a');
+listItems.forEach(function(listItem) {
+	listItem.addEventListener('mouseenter', function() {
+		this.style.fontSize = '1.5rem';
+	})
+	listItem.addEventListener('mouseout', function(){
+		this.style.fontSize = '1.2rem';
+	})
+})
 
 //modal box
 const modal = document.getElementById('modalBox');
@@ -86,11 +92,10 @@ closeLink.addEventListener("click", function() {
 });
 
 
-
 //project carousel
 
 const projectInfoButton = document.querySelector('.projectDetails');
-const projectInfoButtons = document.querySelectorAll('projectDetails');
+const projectInfoButtons = document.querySelectorAll('.projectDetails');
 
 for (var i = 0; i<projectInfoButtons.length; i++){
 	projectInfoButtons[i].addEventListener('click', function(){
@@ -141,15 +146,7 @@ function displaySlides(n) {
 	}  
 	slides[slide_index].style.display = "block";  
 }
-const listItems = document.querySelectorAll('nav ul li a');
-listItems.forEach(function(listItem) {
-	listItem.addEventListener('mouseenter', function() {
-		this.style.fontSize = '1.5rem';
-	})
-	listItem.addEventListener('mouseout', function(){
-		this.style.fontSize = '1.2rem';
-	})
-})
+
 
 
 
