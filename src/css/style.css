@@ -453,7 +453,7 @@ aside button:hover{
 article{
 	display: grid;
 	grid-template-rows: 1fr;
-	background-color: lightgrey;
+	background-color: #0e0712;
 }
 
 .projectHead{
