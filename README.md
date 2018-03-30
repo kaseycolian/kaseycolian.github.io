@@ -1,8 +1,12 @@
 # Personal Portfolio
 
-Created with:
+Personal portfolio containing professional profile showing past projects.  
 
-* HTML5
+Created as a project for WeCanCodeIT using:
+
+* HTML
 * CSS
 * Grid
 * FlexBox
+* DOM
+* JavaScript

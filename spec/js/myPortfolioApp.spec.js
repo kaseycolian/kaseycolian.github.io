@@ -7,6 +7,7 @@ describe('canary', function() {
 
 describe('hide navigation menu', ()=> {
 	it ('hides nav menu when hide button clicked and was visible', () =>{
+<<<<<<< HEAD
 		const navMenu = document.createElement('nav')
 		navMenu.classList.add('navMenu')
 		const parent = document.createElement('aside')
@@ -15,6 +16,23 @@ describe('hide navigation menu', ()=> {
 		navMenu.style.visibility =='visible';
 
 		expect(document.querySelector('.navMenu')).toBe('hidden');
+=======
+		
+		// navMenu.classList.add('navMenu')
+		const ul = document.createElement('ul');
+		const parent = document.createElement('#navigation')
+		
+
+		parent.appendChild(ul);
+		parent.style.visibility =='visible';
+
+const numOfChildrenBefore = parent.childNodes.length; 
+const numberOfChildrenAfter - cards.childNodes.length;
+
+// 		expect(numOfChildrenAfter).toEqual(numOfChildrenBefore-1)
+
+		expect(document.querySelector('ul')).toBeNull();
+>>>>>>> carouselRedesign
 	})
 });
 
@@ -30,7 +48,11 @@ describe ('show navigation menu', function(){
 
 		navMenu.style.visibility == 'hidden';
 
+<<<<<<< HEAD
 		expect(document.querySelector('.navMenu')).toBe('visible');
+=======
+		expect(document.querySelector('.ul')).toBe('visible');
+>>>>>>> carouselRedesign
 	})
 });
 
@@ -61,4 +83,8 @@ describe('hides project details', function(){
 
 		expect(document.querySelector('projDetails')).toBe('hidden');
 	})
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> carouselRedesign
