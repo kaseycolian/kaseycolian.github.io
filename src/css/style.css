@@ -454,9 +454,15 @@ aside button:hover{
 	}
 }
 article{
+<<<<<<< HEAD
 
 
 	
+=======
+	display: grid;
+	grid-template-rows: 1fr;
+	background-color: #0e0712;
+>>>>>>> master
 }
 
 .projectHead{
