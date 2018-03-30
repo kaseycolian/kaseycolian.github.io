@@ -40,23 +40,22 @@ button.addEventListener('click', function(){
 
 //showing side:
 showButton.addEventListener('click', function(){
-
 	navigation.style.display = "block";
-	document.getElementById('show-button').style.display = "none";
 	inner.style.marginLeft = "0rem";
 	footer.style.paddingLeft = "15rem";
-
+	document.getElementById('show-button').style.display = "none";
 });
 showButton.addEventListener('mouseenter', function(){
-
-    showButton.style.transform = "rotate(23.5deg)"; 
-    showButton.style.transition = "1s";
+    showButton.style.transform = "rotateX(31.5deg) rotateY(8deg) rotateZ(15deg)";
+    showButton.style.transition = ".5s";
+    showButton.style.fontSize="1.4rem";
 
 });
 
 showButton.addEventListener('mouseout', function(){
 	showButton.style.transform = "rotate(0deg)";
-	showButton.style.transition = "1s";
+	showButton.style.transition = ".5s";
+	showButton.style.fontSize="1.30rem";
 });
 
 //modal box
