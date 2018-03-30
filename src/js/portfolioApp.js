@@ -35,6 +35,7 @@ button.addEventListener('click', function(){
 	navigation.style.display = "none";
 	showButton.style.display = "block";
 	inner.style.marginLeft = "-14rem";
+	header.style.marginLeft = "-14rem";
 	footer.style.paddingLeft="1rem";
 	showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(1)";
 	showButton.style.right = "1rem";
@@ -45,6 +46,7 @@ showButton.addEventListener('click', function(){
 	navigation.style.display = "block";
 	inner.style.marginLeft = "0rem";
 	footer.style.paddingLeft = "15rem";
+	// header.style.marginLeft = "3rem";
 	document.getElementById('show-button').style.display = "none";
 });
 showButton.addEventListener('mouseenter', function(){
@@ -61,6 +63,7 @@ showButton.addEventListener('mouseout', function(){
 	showButton.style.transition = "3s";
 	showButton.style.fontSize="1.30rem";
 	showButton.style.right=".25rem";
+	showButton.style.position="block";
 });
 
 //modal box

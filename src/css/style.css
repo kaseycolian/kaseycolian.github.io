@@ -57,7 +57,7 @@ h1{
 	font-size: 1.7em;
 }
 h2{
-	color: grey;
+	color: white;
 }
 
 .container{
@@ -80,7 +80,9 @@ body{
 }
 
 .layer{
-	background-color: rgba(254, 254, 254, .1);
+	/*background-color: rgba(254, 254, 254, .27);
+	*/
+	background-color: rgba(138, 0, 230, .1);
 	z-index: -1;
 }
 
@@ -156,16 +158,26 @@ header{
 	grid-column-end: -1;
 	/*background-color: white;*/
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	align-items: center;
+	justify-content: center;
+	margin-left: 14rem;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
 }
 
 .header__name{
+	align-self: center;
 	font-size: 1.7em;
 	margin-top: .5em;
 }
 .header__role{
 	margin-top:-.2em;
+	align-self: center;
 }
 
 .inner{
@@ -227,7 +239,7 @@ article img{
 }
 
 .skills h2{
-	margin-top: 1.2rem;
+	margin-top: 2.5rem;
 	margin-bottom: 2.5rem;
 	display:flex;
 	justify-content: center;
@@ -471,12 +483,12 @@ article{
 	background-color: grey;
 }
 
-/*.projectHead{
+.projectHead{
 	display: flex;
 	justify-content: center;
 	vmargin-top: 1rem;
 }
-*/
+
 
 
 /*.carousel{*/
