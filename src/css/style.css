@@ -128,10 +128,11 @@ nav ul li a:hover{
 	position: fixed;
 	right: .5rem;
 	top: 10rem;
-	height: 5.5rem;
-	width: 5.5rem;
+	height: 5.9rem;
+	width: 5.9rem;
 	background-image: radial-gradient(circle at center, black 80%, #FE80FE);
-	font-size: 1.30rem;
+	font-size: 1.40rem;
+	font-weight: bold;
 	transform: rotateX(28.5deg) rotateY(8deg) rotateZ(15deg);
 	color: #BF46E1;
 	border-radius: .25rem;
@@ -220,7 +221,8 @@ header{
 	max-width: 400px;
 	margin-left: 2rem;
 	margin-right: 2rem;
-	z-index: 3000;
+	z-index: 3;
+	opacity: .8;
 }
 article img{
 	height: 25rem;
@@ -305,6 +307,7 @@ ul, menu, dir {
 /*position: relative;*/
 transform: scale(1.2);
 z-index: 2;
+opacity: .95;
 }
 
 aside li{
@@ -419,6 +422,7 @@ footer{
 	padding-left:15rem;
 	padding-right: 1rem;
 	color: white;
+	font-size: 1.2rem;
 }
 
 .home__link__footer{
@@ -427,18 +431,19 @@ footer{
 
 
 aside button{
-	/*transition: background-image 0.5s ease-out;*/
-	margin-top: 2rem;
 	background-image: radial-gradient(circle at center, black 77%, #E40836);
-	padding: .4em;
-	width: 9em;
-	border-radius: .7em;
-	font-size: 1rem;
-	font-weight: bold;
 	text-align: center;
+	margin-top: 2rem;
+	border-radius: .5em;
+	font-size: 1rem;
+    padding: .3em;
+	font-weight: bold;
 	color: #E40836;
-	border: solid black .2rem;
+	border: solid black .3rem;
 	background-size: 25% 100%;
+    text-align: center;
+	height: 2.9rem;
+	width: 11rem;
  }
 aside button:hover{
 	/*transition: background-image 2s ease-out;*/
@@ -483,11 +488,6 @@ article{
 	background-color: grey;
 }
 
-.projectHead{
-	display: flex;
-	justify-content: center;
-	vmargin-top: 1rem;
-}
 
 
 
