@@ -7,6 +7,7 @@ const headerText = document.getElementById('header');
 button = document.createElement('button');
 button.innerHTML = 'Hide Navigation';	
 navMenu.appendChild(button);
+
 button.classList.add('hide-side-button');
 
 showButton = document.createElement('button');
@@ -15,6 +16,7 @@ container.appendChild(showButton);
 showButton.classList.add('show-nav-button');
 showButton.setAttribute("id", "show-button");
 showButton.style.display="none";
+
 
 
 const projectName = document.querySelector('.project h3');
@@ -34,8 +36,8 @@ button.addEventListener('click', function(){
 	showButton.style.display = "block";
 	inner.style.marginLeft = "-14rem";
 	footer.style.paddingLeft="1rem";
-	// navigation.transition= "none 5s";
-
+	showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(1)";
+	showButton.style.right = "1rem";
 });
 
 //showing side:
@@ -46,16 +48,19 @@ showButton.addEventListener('click', function(){
 	document.getElementById('show-button').style.display = "none";
 });
 showButton.addEventListener('mouseenter', function(){
-    showButton.style.transform = "rotateX(31.5deg) rotateY(8deg) rotateZ(15deg)";
-    showButton.style.transition = ".5s";
-    showButton.style.fontSize="1.4rem";
+    showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(.95)";
+    showButton.style.transition = "2s";
+    showButton.style.fontSize="1.28rem";
+    showButton.style.right="1rem";
 
 });
 
 showButton.addEventListener('mouseout', function(){
-	showButton.style.transform = "rotate(0deg)";
-	showButton.style.transition = ".5s";
+	// showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(1.0)";
+	showButton.style.transform = "rotate(0deg) scale(1)";
+	showButton.style.transition = "3s";
 	showButton.style.fontSize="1.30rem";
+	showButton.style.right=".25rem";
 });
 
 //modal box

@@ -80,7 +80,7 @@ body{
 }
 
 .layer{
-	background-color: rgba(254, 254, 254, .04);
+	background-color: rgba(254, 254, 254, .1);
 	z-index: -1;
 }
 
@@ -91,6 +91,8 @@ aside a:link{
 
 aside a:hover{
 	color: lightgrey;
+	font-size: scale(1.2);
+	position: absolute;
 }
 
 aside a:visited{
@@ -122,12 +124,13 @@ nav ul li a:hover{
 
 .show-nav-button{
 	position: fixed;
-	right: 1rem;
+	right: .5rem;
 	top: 10rem;
 	height: 5.5rem;
 	width: 5.5rem;
 	background-image: radial-gradient(circle at center, black 80%, #FE80FE);
 	font-size: 1.30rem;
+	transform: rotateX(28.5deg) rotateY(8deg) rotateZ(15deg);
 	color: #BF46E1;
 	border-radius: .25rem;
 	border: solid #BF46E1 .1rem;
@@ -293,7 +296,8 @@ z-index: 2;
 }
 
 aside li{
-	margin-bottom: .9em;
+	margin-bottom: 1rem;
+
 }
 
 article h1{
@@ -409,15 +413,12 @@ footer{
 	margin-left: 23em;
 }
 
-@keyframes navigationHideButton {
-    0% {background-image: radial-gradient(circle at center, black 77%, #E40836);}
-    100% {background-image: radial-gradient(circle at center, black 65%, #E40836);}
-}
 
 aside button{
 	/*transition: background-image 0.5s ease-out;*/
+	margin-top: 2rem;
 	background-image: radial-gradient(circle at center, black 77%, #E40836);
-	padding: .3em;
+	padding: .4em;
 	width: 9em;
 	border-radius: .7em;
 	font-size: 1rem;
@@ -425,20 +426,45 @@ aside button{
 	text-align: center;
 	color: #E40836;
 	border: solid black .2rem;
-}
+	background-size: 25% 100%;
+ }
 aside button:hover{
 	/*transition: background-image 2s ease-out;*/
 	/*background-image: radial-gradient(circle at center, black 65%, #E40836);*/
 	cursor: pointer;
 	 animation-name: navigationHideButton;
-    animation-duration: 2s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-/*	font-size: 1.01rem;
-	height: 3rem;*/
-	
-}
+    animation-timing-function: ease;
 
+}
+@keyframes navigationHideButton {
+/*    0% {background-position: radial-gradient(circle at center, black 77%, #E40836);}
+    50% {background: radial-gradient(circle at center, black 72%, #E40836);}
+  100% {background: radial-gradient(circle at center, black 77%, #E40836);}*/
+
+	
+	0% {
+		background-position: 150% 150%
+	}
+	100% {
+		background-position: 60% 60%
+	}
+	/*100% {
+		background-position: 0% 50%
+	}*/
+
+/*    	0% {
+		background: 0% 50%
+	}
+	50% {
+		background: 100% 50%
+	}
+	100% {
+		background: 0% 50%
+}*/
+
+}
 article{
 	/*display: grid;
 	grid-template-rows: 1fr 2 fr;*/
