@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-const asideNav = document.querySelector('nav');
-navMenu = document.querySelector('nav ul');
-const nav = document.querySelector('nav');
-const aside = document.querySelector('aside');
-const projectInfo = document.querySelector('content h3');
-
-button = document.createElement('button');
-button.innerHTML = 'Hide Side';	
-asideNav.appendChild(button);
-
-const projectName = document.querySelector('.project h3');
-
-
-=======
 const navigation = document.getElementById('navigation');
 
 const navMenu = document.querySelector('nav ul');
@@ -35,42 +20,11 @@ showButton.style.display="none";
 
 
 const projectName = document.querySelector('.project h3');
->>>>>>> carouselRedesign
 const leftButton = document.querySelector('.left');
 const rightButton =document.querySelector('.right');
 const projectButton = document.querySelector('.btn');
 
 //button to show/hide project details
-<<<<<<< HEAD
-const projectContent = document.querySelector('#projectContent');
-const allProjectContent = document.querySelectorAll("#projectContent");
-const projectInfoButtons = document.querySelectorAll('.projectDetails');
-const projectInfoButton = document.querySelector('.projectDetails');
-projectInfoButtons.forEach(function(projectInfoButton){
-	projectInfoButton.addEventListener('click', function(){
-		// document.getElementById('projectContent');
-		if (projectContent.style.visibility == 'hidden'){
-			document.getElementById('projectContent').style.visibility = 'visible';
-			projectInfoButton.innerHTML = 'Hide Project Details';
-		}
-		else {
-			document.getElementById('projectContent').style.visibility = 'hidden';
-			projectInfoButton.innerHTML = 'Show Project Details'
-		}
-	})
-});
-//button to show/hide navigation
-button.addEventListener('click', function(){
-	document.getElementById('navigation');
-	if (navigation.style.visibility == 'visible'){
-		document.getElementById('navigation').style.visibility = 'hidden';
-		button.innerHTML = 'Show Navigation';
-	}
-	else {
-		document.getElementById('navigation').style.visibility = 'visible';
-		button.innerHTML = 'Hide Navigation';
-	}
-=======
 // const projectContent = document.querySelector('#projectContent');
 
 const inner = document.getElementById('inner');
@@ -135,13 +89,10 @@ modalLink.addEventListener("click", function (){
 
 closeLink.addEventListener("click", function() {
 	modal.style.display = "none";
->>>>>>> carouselRedesign
 });
 
 
 //project carousel
-<<<<<<< HEAD
-=======
 
 const projectInfoButton = document.querySelector('.projectDetails');
 const projectInfoButtons = document.querySelectorAll('.projectDetails');
@@ -162,7 +113,6 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 	});
 }
 
->>>>>>> carouselRedesign
 var slide_index = 1;  
 displaySlides(slide_index);  
 function nextSlide(n) {  
@@ -196,22 +146,3 @@ function displaySlides(n) {
 	}  
 	slides[slide_index].style.display = "block";  
 }
-
-<<<<<<< HEAD
-//modal box
-const modal = document.getElementById('modalBox');
-const modalLink = document.getElementById('modalLink');
-const closeLink = document.getElementsByClassName("close")[0];
-
-modalLink.addEventListener("click", function (){
-	modal.style.display = "block";
-});
-
-closeLink.addEventListener("click", function() {
-	modal.style.display = "none";
-});
-=======
-
-
-
->>>>>>> carouselRedesign
