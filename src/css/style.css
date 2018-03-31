@@ -8,6 +8,7 @@
 
 	body{
 		background-size: cover;
+		background-color: rgba(138, 0, 230, .1);
     	height: 100%;
     	overflow: hidden;
     	z-index: -6;
@@ -16,6 +17,7 @@
 	.layer{
 		/*background-color: none;
 		z-index: -5;*/
+		display: none;
 	}
 
 	.bio {
