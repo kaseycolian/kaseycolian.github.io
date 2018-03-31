@@ -9,7 +9,7 @@
 		/*justify-content: flex-start;*/
 	}
 	aside{
-		display: none !important;
+		display: none;
 	}
 	.container{
 		/*display: block;*/
@@ -34,10 +34,10 @@
 		margin-left: .25em;
 	}*/
 
-	/*.image {
+	.image {
 		display: flex;
 		flex-wrap: wrap;
-	}*/
+	}
 
 	footer{
 		display: initial;
