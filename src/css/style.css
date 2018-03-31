@@ -9,11 +9,15 @@
 		justify-content: flex-start;
 	}
 	aside{
-		display: none;
+		display: none !important;
 	}
 	.container{
 		display: block;
 		/*grid-template-columns: 0.0001fr 1fr;*/
+	}
+	.inner{
+		position: fixed;
+		left: 0rem;
 	}
 
 	body{
