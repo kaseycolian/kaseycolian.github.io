@@ -27,6 +27,8 @@
 	}
 	.bio img{
 		float: right;
+		height: 20rem;
+  		width: 19rem;
 	}
 
 	/*.bio {
