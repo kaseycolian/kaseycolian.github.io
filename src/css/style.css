@@ -74,14 +74,17 @@ body{
 	background-position: right top;
 	background-attachment: fixed;
 	background-size: 100%;
+	background-color: rgba(138, 0, 230, .1);
 	z-index: -1;
+	
+
 
 }
 
 .layer{
 	/*background-color: rgba(254, 254, 254, .27);
 	*/
-	background-color: rgba(138, 0, 230, .1);
+	
 	z-index: -1;
 }
 
@@ -214,8 +217,8 @@ header{
   	opacity: .8;
 }
 article img{
-  	height: 25rem;
-  	width: 35rem;
+  	height: 35rem;
+  	width: 50rem;
 }
 
 .skills{
@@ -300,23 +303,27 @@ aside li{
 
 }
 
-article h1{
+/*article h1{
 	margin-top: 1.5em;
 	margin-bottom: .5em;
 	font-size: 2em;
 }
-
-.left{
+*/
+#left{
 	/*margin-left: -45rem;*/
 	padding-left: .1rem;
 }
-.right{
+#right{
 	/*margin-right: -1.5rem;*/
 	padding-right: .1rem;
 }
+/*.projectContainer{
+	display: flex;
+	justify-content: center;
+}
+*/
 
-
-.right, .left {  
+.carouselNavButton {  
 	z-index: 1;
 	font-weight: bold;  
 	font-size: 1rem;  
@@ -332,10 +339,15 @@ article h1{
 	margin-top: .25rem;
 	padding-top: .25em;
 }  
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 .projectDetails{
-	display: flex;
-	justify-content: center;
+	/*display: flex;
+	justify-content: center;*/
 	background-color: #0b2957;
 	padding: .5em;
 	width: 12em;
@@ -343,36 +355,32 @@ article h1{
 	font-size: .8em;
 	text-align: center;
 	color: white;
-	margin-left: 11.6rem;
+	/*margin-left: 11.6rem;*/
 }
 
 #projectContent{
 	margin-top: 1rem;
-	margin-right: 22rem;
+	/*margin-right: 22rem;*/
 }
 
 
-article{
+/*article{
 	font-size: 1.1em;
 	max-width: 100vw;
 	display: grid;
 	grid-template-rows: 1fr;
 	background-color: #0e0712;
 	
-}
+}*/
 
 article h2 {
-	content: "";
+	/*content: "";*/
 	left: 25%;
 	margin-bottom: 1.7em;
 	width: 30%;
 	border-bottom:.20em solid var(--blue);
 	display: flex;
 	justify-content: center;
-}
-
-.project img{
-	box-shadow: .15em .15em darkgrey;
 }
 
 .btn a:link{
@@ -397,7 +405,7 @@ article h2 {
 	font-size: .8em;
 	text-align: center;
 	font-color: #0b2957;
-	margin-left: 11.7rem;
+	/*margin-left: 11.7rem;*/
 }
 
 footer{
@@ -453,16 +461,11 @@ aside button:hover{
 		background: radial-gradient(circle at center, black 77%,  rgba(228,	8,	54, 1));
 	}
 }
-article{
-<<<<<<< HEAD
-
-
-	
-=======
+.projectSection{
 	display: grid;
-	grid-template-rows: 1fr;
+	grid-template-rows: 5rem, 1fr;
 	background-color: #0e0712;
->>>>>>> master
+
 }
 
 .projectHead{
@@ -471,15 +474,14 @@ article{
 	margin-top: 1rem;
 }
 
-		.carousel{
-/*	display: flex;
-	align-items: center;
-	justify-content: center;*/
-	
-
-
+.carousel{
+	display: grid;
+	/*align-items: center;*/
+	grid-template-columns: .25fr 1fr .25fr;
 }
-
+/*.project img{
+	box-shadow: .15em .15em darkgrey;
+}*/
 
 /*modal box*/
 .modal {
@@ -526,11 +528,12 @@ article{
 }
 
 .content h3{
-	align-self: center;
+/*	align-self: center;
 	display: flex;
 	justify-content: center;
-	margin-right: 21rem;
+	margin-right: 21rem;*/
 }
-.content{
+/*.content{
 	margin-right: 12rem;
 }
+*/
