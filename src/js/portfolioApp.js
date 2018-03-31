@@ -17,13 +17,6 @@ showButton.classList.add('show-nav-button');
 showButton.setAttribute("id", "show-button");
 showButton.style.display="none";
 
-
-
-const projectName = document.querySelector('.project h3');
-const leftButton = document.querySelector('.left');
-const rightButton =document.querySelector('.right');
-const projectButton = document.querySelector('.btn');
-
 //button to show/hide project details
 // const projectContent = document.querySelector('#projectContent');
 
@@ -94,27 +87,57 @@ closeLink.addEventListener("click", function() {
 
 //project carousel
 
-const projectInfoButton = document.querySelector('.projectDetails');
+// const projectInfoButton = document.querySelector('.projectDetails');
+// const projectName = document.querySelector('.project h3');
+// const projectButton = document.querySelector('.btn');
 const projectInfoButtons = document.querySelectorAll('.projectDetails');
+const leftButton = document.getElementById('left');
+const rightButton =document.getElementById('right');
 
-for (var i = 0; i<projectInfoButtons.length; i++){
+// const reviewContents = document.querySelectorAll('projectContent');
+// for (let con = 0; con<reviewContents.length; con++){
+// 	leftButton.addEventListener('click', function(){
+
+// 		let reviewContent = document.getElementById(this.dataset.contentid);
+// 		// if (reviewContents[3].style.visibility=='visible'){
+// 		// 	reviewContents[1].style.visibility = 'visible';
+// 		// }
+
+// 		if (reviewContents[con-1].style.visibility == 'visible'){
+// 			reviewContent.style.visibility = 'visible';
+// 		}
+// 		else{
+// 			reviewContent.style.visibility='hidden';
+// 		}
+// 	});
+// }
+
+
+for (let i = 0; i<projectInfoButtons.length; i++){
 	projectInfoButtons[i].addEventListener('click', function(){
 
 		let reviewContent = document.getElementById(this.dataset.contentid);
-
+		
 		if (reviewContent.style.visibility == 'hidden'){
 			reviewContent.style.visibility = 'visible';
+			reviewContent.style.display = "flex";
+			reviewContent.style.flexDirection = "column";
+			reviewContent.style.alignItems = "center";
 			this.innerHTML = 'Hide Project Details';
 		}
 		else {
 			reviewContent.style.visibility = 'hidden';
+			reviewContent.style.display = "flex";
+			reviewContent.style.flexDirection = "column";
+			reviewContent.style.alignItems = "center";
 			this.innerHTML = 'Show Project Details'
 		}
 	});
 }
 
-var slide_index = 1;  
+let slide_index = 1;  
 displaySlides(slide_index);  
+
 function nextSlide(n) {  
 	displaySlides(slide_index += n);  
 }  
@@ -144,5 +167,7 @@ function displaySlides(n) {
 	for (i = 0; i < slides.length; i++) {  
 		slides[i].style.display = "none";  
 	}  
-	slides[slide_index].style.display = "block";  
+	slides[slide_index].style.display = "flex";  
+	slides[slide_index].style.flexDirection = "column";
+	slides[slide_index].style.alignItems = "center";
 }
