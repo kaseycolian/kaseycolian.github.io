@@ -14,12 +14,7 @@
 
 	body{
 		background-size: cover;
-		/*background-image: url(../../static/images/keyboard.jpeg);*/
 		background-attachment: scroll;
-
-/*    	height: 100%;
-    	overflow: hidden;*/
-    	/*z-index: -6;
 	}
 
 	.bio {
