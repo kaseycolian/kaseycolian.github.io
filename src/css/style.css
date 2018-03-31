@@ -14,23 +14,15 @@
 		justify-content: flex-start;
 	}
 
-	/*body{
+	body{
 		background-size: cover;
-		background-image: url(../../static/images/keyboard.jpeg);
+	/*	background-image: url(../../static/images/keyboard.jpeg);
 		background-image: none;
     	height: 100%;
     	overflow: hidden;
-    	/*z-index: -6;
-	}*/
-
-	/*.layer{
-		/*background-color: rgba(138, 0, 230, .1);
-		
-		background-color: none;
-		z-index: -5;
-		display: none;
+    	/*z-index: -6;*/
 	}
-*/
+
 	.bio {
 		display: flex;
 		flex-direction: row-reverse;
