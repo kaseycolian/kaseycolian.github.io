@@ -21,18 +21,18 @@
 		background-attachment: scroll;
 	}
 
-	.bio {
+	/*.bio {
 		display: flex;
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
 		margin-right: .25em;
 		margin-left: .25em;
-	}
+	}*/
 
-	.image {
+	/*.image {
 		display: flex;
 		flex-wrap: wrap;
-	}
+	}*/
 
 	footer{
 		display: initial;
