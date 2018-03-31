@@ -14,8 +14,8 @@
 	}
 
 	.layer{
-		background-color: none;
-		z-index: -5;
+		/*background-color: none;
+		z-index: -5;*/
 	}
 
 	.bio {
@@ -93,7 +93,10 @@ body{
 
 .layer{
 	background-color: rgba(138, 0, 230, .1);
-	position: absolute;
+	background-position: right top;
+	background-attachment: fixed;
+	background-size: 100%;
+
 	z-index: -1;
 }
 
