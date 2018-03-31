@@ -13,7 +13,7 @@
 	}
 	.container{
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 0.0001fr 1fr;
 	}
 
 	body{
