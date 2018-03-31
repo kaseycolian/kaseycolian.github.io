@@ -25,6 +25,9 @@
 		background-size: cover;
 		background-attachment: scroll;
 	}
+	.bio img{
+		float: right;
+	}
 
 	/*.bio {
 		display: flex;
