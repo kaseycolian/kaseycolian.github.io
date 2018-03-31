@@ -5,10 +5,10 @@
 		justify-content: flex-start;
 	}
 
-	body{
+	*{
 		    background-size: cover;
-    height: 100%;
-    overflow: hidden;
+    		height: 100%;
+    		overflow: hidden;
 	}
 	.layer{
 		background-color: none;
@@ -298,14 +298,6 @@ aside li{
 
 }
 
-
-#left{
-	padding-left: .1rem;
-}
-#right{
-	padding-right: .1rem;
-}
-
 .carouselLeftNav{
 	display: flex;
 	justify-content: flex-end;
@@ -382,7 +374,7 @@ article h2 {
 	text-align: center;
 	color: white;
 	margin-top: .5rem;
-	margin-bottom: .5rem;
+	margin-bottom: 4rem;
 
 }
 
@@ -459,6 +451,27 @@ aside button:hover, .projectDetails:hover{
 	display: grid;
 	grid-template-columns: .25fr 1fr .25fr;
 }
+
+.carouselLeftNav{
+	margin-right: -10rem;
+	margin-top: 11rem;
+	z-index: 2;
+}
+
+#left, #right{
+	background-color: rgba(228,	8,	54, .7);
+	padding-left: .1rem;
+	border: .1rem solid black;
+}
+.carouselRightButton{
+	margin-left: -10rem;
+	margin-top: 11rem;
+	z-index: 2;
+}
+/*#right{
+	background-color: rgba(228,	8,	54, .7);
+	padding-right: .1rem;
+}*/
 
 .modal {
 	max-width: 100vw;

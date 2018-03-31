@@ -91,6 +91,7 @@ const projectInfoButton = document.querySelector('.projectDetails');
 const projectInfoButtons = document.querySelectorAll('.projectDetails');
 const leftButton = document.getElementById('left');
 const rightButton =document.getElementById('right');
+// const projectImages = document.getElementsByClassName('projectImage');
 
 // const reviewContents = document.querySelectorAll('projectContent');
 // for (let con = 0; con<reviewContents.length; con++){
@@ -115,6 +116,7 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 	projectInfoButtons[i].addEventListener('click', function(){
 
 		let reviewContent = document.getElementById(this.dataset.contentid);
+		let projectImage = document.getElementById(this.dataset.imageid);
 		
 		if (reviewContent.style.visibility == 'hidden'){
 			reviewContent.style.visibility = 'visible';
@@ -124,6 +126,7 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.marginTop = '1rem'
 			reviewContent.style.paddingLeft = '1rem';
 			reviewContent.style.paddingRight = '1rem';
+			projectImage.style.transform='scale(.9)';
 			this.style.transform = 'scale(.8)';
 			this.style.transitionDuration= '1s';
 			this.style.marginBottom = '.5rem';
@@ -137,6 +140,7 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.marginTop = '2rem';
 			reviewContent.style.paddingLeft = "1rem";
 			reviewContent.style.paddingRight = "1rem";
+			projectImage.style.transform='scale(1)';
 			this.style.transform = "scale(1)";
 			this.style.transitionDuration= '1s';
 			this.style.marginBottom = '3rem';
