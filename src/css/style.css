@@ -18,6 +18,7 @@
 	.inner{
 		position: relative;
 		left: 0rem;
+		display: flex;
 	}
 
 	body{
