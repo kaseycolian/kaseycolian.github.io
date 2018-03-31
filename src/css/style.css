@@ -8,17 +8,18 @@
 		margin-left: 12rem;
 		justify-content: flex-start;
 	}
-	nav{
+	aside{
 		display: none;
 	}
 
 	body{
 		background-size: cover;
-	/*	background-image: url(../../static/images/keyboard.jpeg);
-		background-image: none;
-    	height: 100%;
-    	overflow: hidden;
-    	/*z-index: -6;*/
+		/*background-image: url(../../static/images/keyboard.jpeg);*/
+		background-attachment: scroll;
+
+/*    	height: 100%;
+    	overflow: hidden;*/
+    	/*z-index: -6;
 	}
 
 	.bio {
