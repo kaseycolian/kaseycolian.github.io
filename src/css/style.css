@@ -11,6 +11,10 @@
 	aside{
 		display: none;
 	}
+	.container{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 
 	body{
 		background-size: cover;
