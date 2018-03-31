@@ -16,7 +16,7 @@
 		/*grid-template-columns: 0.0001fr 1fr;*/
 	}
 	.inner{
-		position: fixed;
+		position: relative;
 		left: 0rem;
 	}
 
