@@ -1,5 +1,4 @@
 const navigation = document.getElementById('navigation');
-
 const navMenu = document.querySelector('nav ul');
 const nav = document.querySelector('nav');
 const headerText = document.getElementById('header');
@@ -7,7 +6,6 @@ const headerText = document.getElementById('header');
 button = document.createElement('button');
 button.innerHTML = 'Hide Navigation';	
 navMenu.appendChild(button);
-
 button.classList.add('hide-side-button');
 
 showButton = document.createElement('button');
@@ -87,7 +85,7 @@ closeLink.addEventListener("click", function() {
 
 //project carousel
 
-// const projectInfoButton = document.querySelector('.projectDetails');
+const projectInfoButton = document.querySelector('.projectDetails');
 // const projectName = document.querySelector('.project h3');
 // const projectButton = document.querySelector('.btn');
 const projectInfoButtons = document.querySelectorAll('.projectDetails');
@@ -113,7 +111,7 @@ const rightButton =document.getElementById('right');
 // }
 
 
-for (let i = 0; i<projectInfoButtons.length; i++){
+for (var i = 0; i<projectInfoButtons.length; i++){
 	projectInfoButtons[i].addEventListener('click', function(){
 
 		let reviewContent = document.getElementById(this.dataset.contentid);
@@ -123,19 +121,25 @@ for (let i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.display = "flex";
 			reviewContent.style.flexDirection = "column";
 			reviewContent.style.alignItems = "center";
+			reviewContent.style.marginTop = "2rem";
+			reviewContent.style.paddingLeft = "1rem";
+			reviewContent.style.paddingRight = "1rem";
 			this.innerHTML = 'Hide Project Details';
 		}
-		else {
+		else{
 			reviewContent.style.visibility = 'hidden';
-			reviewContent.style.display = "flex";
+			reviewContent.style.display = "none";
 			reviewContent.style.flexDirection = "column";
 			reviewContent.style.alignItems = "center";
-			this.innerHTML = 'Show Project Details'
+			reviewContent.style.marginTop = "2rem";
+			reviewContent.style.paddingLeft = "1rem";
+			reviewContent.style.paddingRight = "1rem";
+			this.innerHTML = 'Show Project Details';
 		}
 	});
 }
 
-let slide_index = 1;  
+var slide_index = 1;  
 displaySlides(slide_index);  
 
 function nextSlide(n) {  

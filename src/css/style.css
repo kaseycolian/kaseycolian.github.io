@@ -74,19 +74,15 @@ body{
 	background-position: right top;
 	background-attachment: fixed;
 	background-size: 100%;
+	/*background-color: rgba(138, 0, 230, .1);*/
+	z-index: -1;
+}
+
+/*.layer{
 	background-color: rgba(138, 0, 230, .1);
+	position: absolute;
 	z-index: -1;
-	
-
-
-}
-
-.layer{
-	/*background-color: rgba(254, 254, 254, .27);
-	*/
-	
-	z-index: -1;
-}
+}*/
 
 
 aside a:link{
@@ -107,7 +103,6 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/*background-color: #0B2957;*/
 	background-color: black;
 	position: fixed;
 	left: 0;
@@ -217,10 +212,10 @@ header{
   	opacity: .8;
 }
 article img{
-  	height: 35rem;
-  	width: 50rem;
+  	height: 30rem;
+  	width: 46rem;
+  	border: solid black .1rem;
 }
-
 .skills{
  	display: flex;
   	align-items: center;
@@ -244,13 +239,6 @@ article img{
   	flex-wrap: wrap;
   	justify-content: center;
   	font-size: 2rem;
-/*	display: flex;
-	flex-direction: column;
-	height: 8em;
-	flex-wrap: wrap;
-	font-size: 1.25em;
-	margin-top: .5em;*/
-	/*margin-left: -14rem;*/
 }
 ul, menu, dir {
 	-webkit-padding-start: 0rem;
@@ -286,13 +274,11 @@ ul, menu, dir {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	/*justify-content: space-between;*/
 	margin-top: 1.55em;
 	margin-bottom: 3em;
 	flex-wrap: wrap;
 }
 .contact__links img:hover{
-	/*position: relative;*/
 	transform: scale(1.2);
 	z-index: 2;
 	opacity: .95;
@@ -303,32 +289,24 @@ aside li{
 
 }
 
-/*article h1{
-	margin-top: 1.5em;
-	margin-bottom: .5em;
-	font-size: 2em;
-}
-*/
+
 #left{
-	/*margin-left: -45rem;*/
 	padding-left: .1rem;
 }
 #right{
-	/*margin-right: -1.5rem;*/
 	padding-right: .1rem;
 }
-/*.projectContainer{
+
+.carouselLeftNav{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 }
-*/
 
 .carouselNavButton {  
 	z-index: 1;
 	font-weight: bold;  
 	font-size: 1rem;  
 	background-color: rgba(254, 254, 254, .6);
-	/*padding: .5em;*/
 	width: 2.5em;
 	border-radius: 1em;
 	border: .2rem solid #0b2957;
@@ -345,9 +323,7 @@ aside li{
 	align-items: center;
 }
 
-.projectDetails{
-	/*display: flex;
-	justify-content: center;*/
+/*.projectDetails{
 	background-color: #0b2957;
 	padding: .5em;
 	width: 12em;
@@ -355,37 +331,26 @@ aside li{
 	font-size: .8em;
 	text-align: center;
 	color: white;
-	/*margin-left: 11.6rem;*/
-}
+}*/
 
 #projectContent{
 	margin-top: 1rem;
-	/*margin-right: 22rem;*/
 }
-
-
-/*article{
-	font-size: 1.1em;
-	max-width: 100vw;
-	display: grid;
-	grid-template-rows: 1fr;
-	background-color: #0e0712;
-	
-}*/
 
 article h2 {
 	/*content: "";*/
-	left: 25%;
+/*	left: 25%;
 	margin-bottom: 1.7em;
 	width: 30%;
-	border-bottom:.20em solid var(--blue);
+	border-bottom:.20em solid var(--blue);*/
 	display: flex;
 	justify-content: center;
+	margin-bottom: 2.25rem;
+	font-size: 2rem;
 }
 
 .btn a:link{
-	color: #0b2957;
-
+	color: white;
 }
 
 .btn a:hover{
@@ -393,26 +358,28 @@ article h2 {
 }
 
 .btn a:visited{
-	color: navy;
+	color: white;
 }
 
 .btn {
-	background-color: white;
+	background: radial-gradient(circle at center, rgba(228, 8, 54, .55) 77%, rgba(0, 0, 0, 1));
+	/*background-color: rgba(228, 8, 54, .85);*/
+	box-shadow: 0 0 13px black;
 	padding: .5em;
-	width: 11em;
+	width: 12rem;
 	border-radius: 1em;
-	border: .2rem solid #0b2957;
+	border: .2rem solid black;
 	font-size: .8em;
 	text-align: center;
-	font-color: #0b2957;
-	/*margin-left: 11.7rem;*/
+	color: white;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+
 }
 
 footer{
 	align-items: center;
-	/*grid-column-start:1;*/
 	grid-column-end: -1;
-	/*flex-wrap: wrap;*/
 	display: flex;
 	justify-content: space-between;
 	padding-left:15rem;
@@ -426,7 +393,7 @@ footer{
 }
 
 
-aside button{
+aside button, .projectDetails{
 	background: radial-gradient(circle at center, black 77%, rgba(228,	8,	54, 1));
 	box-shadow: 0 0 13px red;
 	border-radius: .5em;
@@ -443,7 +410,7 @@ aside button{
 
 
 }
-aside button:hover{
+aside button:hover, .projectDetails:hover{
 	cursor: pointer;
 	animation-name: navigationHideButton;
 	animation: navigationHideButton 2s infinite;
@@ -476,14 +443,9 @@ aside button:hover{
 
 .carousel{
 	display: grid;
-	/*align-items: center;*/
 	grid-template-columns: .25fr 1fr .25fr;
 }
-/*.project img{
-	box-shadow: .15em .15em darkgrey;
-}*/
 
-/*modal box*/
 .modal {
 	max-width: 100vw;
 	display: none;
@@ -504,7 +466,6 @@ aside button:hover{
 	background-color: rgba(264, 264, 264, .90);
 	margin: 15% auto;
 	padding: 2.6rem;
-
 	border: 1px solid #FE80FE;
 	border-radius: .2rem;
 	width: 80%;
@@ -527,13 +488,3 @@ aside button:hover{
 	font-size: 2.75rem;
 }
 
-.content h3{
-/*	align-self: center;
-	display: flex;
-	justify-content: center;
-	margin-right: 21rem;*/
-}
-/*.content{
-	margin-right: 12rem;
-}
-*/
