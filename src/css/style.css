@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Khula');
 @media only screen and (max-width: 500px) {
+
 	header{
 		margin-left: 12rem;
 		justify-content: flex-start;
 	}
 
 	body{
-		    background-size: cover;
-    		height: 100%;
-    		overflow: hidden;
+		background-size: cover;
+    	height: 100%;
+    	overflow: hidden;
+    	z-index: -6;
 	}
+
 	.layer{
 		background-color: none;
 		z-index: -5;
@@ -22,17 +25,18 @@
 		margin-right: .25em;
 		margin-left: .25em;
 	}
+
 	.image {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	footer{
 		display: initial;
 		grid-column-start:0;
 		grid-column-end: -1;
 		text-align: center;
 		justify-content: center;
-
 	}
 
 	aside ul{
