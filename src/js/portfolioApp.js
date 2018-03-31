@@ -118,12 +118,15 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 		
 		if (reviewContent.style.visibility == 'hidden'){
 			reviewContent.style.visibility = 'visible';
-			reviewContent.style.display = "flex";
-			reviewContent.style.flexDirection = "column";
-			reviewContent.style.alignItems = "center";
-			reviewContent.style.marginTop = "2rem";
-			reviewContent.style.paddingLeft = "1rem";
-			reviewContent.style.paddingRight = "1rem";
+			reviewContent.style.display = 'flex';
+			reviewContent.style.flexDirection = 'column';
+			reviewContent.style.alignItems = 'center';
+			reviewContent.style.marginTop = '1rem'
+			reviewContent.style.paddingLeft = '1rem';
+			reviewContent.style.paddingRight = '1rem';
+			this.style.transform = 'scale(.8)';
+			this.style.transitionDuration= '1s';
+			this.style.marginBottom = '.5rem';
 			this.innerHTML = 'Hide Project Details';
 		}
 		else{
@@ -131,10 +134,14 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.display = "none";
 			reviewContent.style.flexDirection = "column";
 			reviewContent.style.alignItems = "center";
-			reviewContent.style.marginTop = "2rem";
+			reviewContent.style.marginTop = '2rem';
 			reviewContent.style.paddingLeft = "1rem";
 			reviewContent.style.paddingRight = "1rem";
+			this.style.transform = "scale(1)";
+			this.style.transitionDuration= '1s';
+			this.style.marginBottom = '3rem';
 			this.innerHTML = 'Show Project Details';
+			// this.style.marginBottom = '2rem';
 		}
 	});
 }
