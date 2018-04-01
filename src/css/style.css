@@ -11,15 +11,13 @@
 	/*position: fixed;*/
 	left: 0;
 	top: 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	display: block;
+/*	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
 	}
 	aside{
 		display: none;
 		visibility: hidden;
-		/*flex-direction: row;
-		z-index: 5000;*/
 	}
 	.salutation{
 	display: flex;
@@ -27,7 +25,7 @@
 	justify-content: space-around;
 	}
 
-	.skills ul{
+	.skills li{
 	display: inline-flex;
 }
 	header{
@@ -53,21 +51,21 @@
 	}
 	*/
 
-/*	.bio img{
+	.bio img{
 		float: right;
 		height: 20rem;
   		width: 19rem;
-  		}*/
+  		}
 
-	/*.bio {
+	.bio {
 		display: flex;
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
 		margin-right: .25em;
 		margin-left: .25em;
-		}*/
+		}
 
-/*	.image {
+	.image {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -80,11 +78,11 @@
 		justify-content: center;
 	}
 
-	aside ul{
+	/*aside ul{
 		top: 1em; 
-	}
 	}*/
-}
+	
+	}
 *{
 	box-sizing: border-box;
 	margin: 0;
