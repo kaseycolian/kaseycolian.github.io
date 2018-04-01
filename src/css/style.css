@@ -12,6 +12,11 @@
 	left: 0;
 	top: 0;
 	}
+	nav{
+		display: inline-flex;
+	}
+
+
 /*
 	header{
 		/*margin-left: 12rem;
