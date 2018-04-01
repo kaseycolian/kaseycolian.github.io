@@ -27,6 +27,14 @@
 	.skills ul{
 	display: inline-flex;
 }
+.container{
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows: 8rem 1fr 2rem;
+	/*background-color: white;*/
+	color: white;
+	
+}
 /*
 	header{
 		/*margin-left: 12rem;
