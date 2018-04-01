@@ -13,14 +13,18 @@
 	top: 0;
 	}
 	nav{
-		display: flex;
-		flex-direction: row;
-		z-index: 5000;
+		display: none;
+		/*flex-direction: row;
+		z-index: 5000;*/
 	}
 	.bio{
 	display: flex;
 	justify-content: space-around;
 	}
+
+	.skills ul{
+	display: inline-flex;
+}
 /*
 	header{
 		/*margin-left: 12rem;
