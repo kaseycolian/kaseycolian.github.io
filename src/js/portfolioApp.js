@@ -15,9 +15,6 @@ showButton.classList.add('show-nav-button');
 showButton.setAttribute("id", "show-button");
 showButton.style.display="none";
 
-//button to show/hide project details
-// const projectContent = document.querySelector('#projectContent');
-
 const inner = document.getElementById('inner');
 const footer = document.getElementById('footer');
 
@@ -38,16 +35,15 @@ showButton.addEventListener('click', function(){
 	inner.style.marginLeft = "0rem";
 	footer.style.paddingLeft = "15rem";
 	document.getElementById('show-button').style.display = "none";
-	showButton.style.transition="2s";
 });
-showButton.addEventListener('mouseenter', function(){
-    showButton.style.transform="scale(.90)";
-    showButton.style.right=".25rem";
-    showButton.style.transition = ".5s";
-    showButton.style.fontSize="1.37rem";
-    showButton.style.fontWeight="bold";
-    showButton.transitionTimingFunction="ease";
 
+showButton.addEventListener('mouseenter', function(){
+	showButton.style.transform="scale(.90)";
+	showButton.style.right=".25rem";
+	showButton.style.transition = ".5s";
+	showButton.style.fontSize="1.37rem";
+	showButton.style.fontWeight="bold";
+	showButton.transitionTimingFunction="ease";
 });
 
 showButton.addEventListener('mouseout', function(){
@@ -85,32 +81,9 @@ closeLink.addEventListener("click", function() {
 
 //project carousel
 
-const projectInfoButton = document.querySelector('.projectDetails');
-// const projectName = document.querySelector('.project h3');
-// const projectButton = document.querySelector('.btn');
 const projectInfoButtons = document.querySelectorAll('.projectDetails');
 const leftButton = document.getElementById('left');
 const rightButton =document.getElementById('right');
-// const projectImages = document.getElementsByClassName('projectImage');
-
-// const reviewContents = document.querySelectorAll('projectContent');
-// for (let con = 0; con<reviewContents.length; con++){
-// 	leftButton.addEventListener('click', function(){
-
-// 		let reviewContent = document.getElementById(this.dataset.contentid);
-// 		// if (reviewContents[3].style.visibility=='visible'){
-// 		// 	reviewContents[1].style.visibility = 'visible';
-// 		// }
-
-// 		if (reviewContents[con-1].style.visibility == 'visible'){
-// 			reviewContent.style.visibility = 'visible';
-// 		}
-// 		else{
-// 			reviewContent.style.visibility='hidden';
-// 		}
-// 	});
-// }
-
 
 for (var i = 0; i<projectInfoButtons.length; i++){
 	projectInfoButtons[i].addEventListener('click', function(){
@@ -126,6 +99,8 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.marginTop = '1rem'
 			reviewContent.style.paddingLeft = '1rem';
 			reviewContent.style.paddingRight = '1rem';
+			reviewContent.style.fontSize = '1.25rem';
+			reviewContent.style.zIndex = '5000';
 			projectImage.style.transform='scale(.9)';
 			this.style.transform = 'scale(.8)';
 			this.style.transitionDuration= '1s';
@@ -138,14 +113,14 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.flexDirection = "column";
 			reviewContent.style.alignItems = "center";
 			reviewContent.style.marginTop = '2rem';
+			reviewContent.style.marginBottom = '7rem';
 			reviewContent.style.paddingLeft = "1rem";
 			reviewContent.style.paddingRight = "1rem";
 			projectImage.style.transform='scale(1)';
+			this.style.marginBottom = '7rem';
 			this.style.transform = "scale(1)";
 			this.style.transitionDuration= '1s';
-			this.style.marginBottom = '3rem';
 			this.innerHTML = 'Show Project Details';
-			// this.style.marginBottom = '2rem';
 		}
 	});
 }
@@ -156,12 +131,29 @@ displaySlides(slide_index);
 function nextSlide(n) {  
 	displaySlides(slide_index += n);  
 }  
+
 function currentSlide(n) {  
 	displaySlides(slide_index = n);  
 }  
+
+allContent = document.querySelectorAll('projectContent');
 leftButton.addEventListener('click', function(){
+
+
+	
+	for (var i = 0; i<allContent.length; i++){
+		let reviewContent = document.getElementById(this.dataset.contentid);
+		
+		if (reviewContent.style.visibility=='visible'){
+			this.style.display='none';
+		}
+		else{
+			this.style.visibility='hidden';
+		}
+	}
 	displaySlides(slide_index+1);
 });
+
 
 rightButton.addEventListener('click', function () {
 	displaySlides(slide_index-1);
