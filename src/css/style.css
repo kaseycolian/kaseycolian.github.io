@@ -21,7 +21,7 @@
 		/*flex-direction: row;
 		z-index: 5000;*/
 	}
-	.bio{
+	.salutation{
 	display: flex;
 	float: right;
 	justify-content: space-around;
