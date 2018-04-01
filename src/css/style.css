@@ -11,6 +11,7 @@
 	/*position: fixed;*/
 	left: 0;
 	top: 0;
+	display: flex;
 	}
 	aside{
 		display: none;
@@ -27,17 +28,8 @@
 	.skills ul{
 	display: inline-flex;
 }
-.container{
-	display: flex;
-	/*grid-template-columns:1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
-	/*background-color: white;*/
-	color: white;
-	
-}
-
 	header{
-		margin-top: 3rem;
+		margin-top: 5rem;
 		justify-content: flex-start;
 	}
 	/*
