@@ -12,13 +12,15 @@
 	left: 0;
 	top: 0;
 	}
-	nav{
+	aside{
 		display: none;
+		visibility: hidden;
 		/*flex-direction: row;
 		z-index: 5000;*/
 	}
 	.bio{
 	display: flex;
+	float: right;
 	justify-content: space-around;
 	}
 
