@@ -28,18 +28,19 @@
 	display: inline-flex;
 }
 .container{
-	display: grid;
-	grid-template-columns:1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	display: flex;
+	/*grid-template-columns:1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
 	/*background-color: white;*/
 	color: white;
 	
 }
-/*
+
 	header{
-		/*margin-left: 12rem;
-		/*justify-content: flex-start;*/
-/*	}
+		margin-top: 3rem;
+		justify-content: flex-start;
+	}
+	/*
 	.skills ul{
 		margin-left: 0rem;
 	}
