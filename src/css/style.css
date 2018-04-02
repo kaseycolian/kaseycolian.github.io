@@ -7,11 +7,11 @@
 		overflow: hidden;
 	}
 	.layer{
-			background-color: black;
+			background-image: url(../../static/images/keyboard.jpeg);
 			z-index: -1;
 	}
 	.container{
-		/*background-color: black;*/
+		background-image: none;
 		/*position: fixed;*/
 		left: 0;
 		top: 0;
@@ -19,8 +19,8 @@
 	}
 /*	grid-template-columns: 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
-}
-aside{
+
+/*aside{
 	display: none;
 	visibility: hidden;
 }
@@ -37,7 +37,7 @@ aside{
 header{
 	margin-top: 5rem;
 	justify-content: flex-start;
-}
+}*/
 	/*
 	.skills ul{
 		margin-left: 0rem;
@@ -57,12 +57,12 @@ header{
 	}
 	*/
 
-	.bio img{
+	/*.bio img{
 		float: right;
 		height: 20rem;
 		width: 19rem;
 	}
-
+*/
 /*	.bio {
 		display: flex;
 		flex-direction: row-reverse;
@@ -71,19 +71,19 @@ header{
 		margin-left: .25em;
 		}*/
 
-		.image {
+		/*.image {
 			display: flex;
 			flex-wrap: wrap;
-		}
+		}*/
 
-		footer{
+		/*footer{
 			display: initial;
 			grid-column-start:0;
 			grid-column-end: -1;
 			text-align: center;
 			justify-content: center;
 		}
-
+*/
 	/*aside ul{
 		top: 1em; 
 		}*/
