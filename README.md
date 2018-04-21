@@ -8,5 +8,5 @@ Created as a project for WeCanCodeIT using:
 * CSS
 * Grid
 * FlexBox
-* DOM
+* DOM Manipulation
 * JavaScript
