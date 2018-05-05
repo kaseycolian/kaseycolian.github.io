@@ -469,6 +469,9 @@ header{
 	margin: 0;
 	padding: 0;
 }
+title{
+	display: none;
+}
 .layer{
 	background-image: url(../../static/images/keyboard.jpeg);
 	background-color: none;
