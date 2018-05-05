@@ -471,6 +471,7 @@ header{
 }
 .layer{
 	background-image: url(../../static/images/keyboard.jpeg);
+	background-color: none;
 /* 	z-index: 1; */
 	/*background-repeat: no-repeat;*/
 	/*display: none;*/
