@@ -80,17 +80,76 @@ closeLink.addEventListener("click", function() {
 
 
 //project carousel
-
+const projectImages = document.querySelectorAll('.projectImages');
 const projectInfoButtons = document.querySelectorAll('.projectDetails');
 const leftButton = document.getElementById('left');
 const rightButton =document.getElementById('right');
 
-for (var i = 0; i<projectInfoButtons.length; i++){
+
+//enlarging project images on click & descaling on click of image:
+for (let i = 0; i<projectImages.length; i++){
+	projectImages[i].addEventListener('click', enlargeProjectImages);
+};
+
+//rescaling project images on escape
+for (let i = 0; i<projectImages.length; i++){
+	document.addEventListener('keydown', event=>{
+		if (event.key === 'Escape' || event.keyCode === 27){
+			if(projectImages[i].style.transform === "scale(1.4)"){
+				projectImages[i].style.transform ="scale(1.00)";
+				leftButton.style.visibility = "visible";
+				rightButton.style.visibility = "visible";
+			}
+		}
+	});		
+}
+
+// rescaling project images on click outside image
+// document.addEventListener('click', function(){
+// 	let projectImage = document.getElementById(this.dataset.imageid);
+// 	for (let i = 0; i<projectImages.length; i++){
+// 		if(projectImages[i].style.transform === "scale(1.4)"){
+// 			projectImages[i].style.transform ="scale(1.00)";
+// 			leftButton.style.visibility = "visible";
+// 			rightButton.style.visibility = "visible";
+// 		}
+// 	}
+// });
+const body = document.getElementsByTagName('BODY');
+for (let i = 0; i<projectImages.length; i++){
+
+			if(projectImages[i].style.transform === "scale(1.4)"){
+				body.addEventListener('click', function(){
+					projectImages[i].style.transform ="scale(1.00)";
+					leftButton.style.visibility = "visible";
+					rightButton.style.visibility = "visible";
+				});
+			}
+}
+
+
+function enlargeProjectImages(){
+	let projectImage = document.getElementById(this.dataset.imageid);
+	//create a toggle to toggle between class enlarged (scale 1.2) & regular (scale 1.0)
+		if(this.style.transform === "scale(1.4)"){
+			this.style.transform ="scale(1.00)";
+			leftButton.style.visibility = "visible";
+			rightButton.style.visibility = "visible";	
+		} else{
+			this.style.transform = 'scale(1.4)';
+			this.style.zIndex = '2';
+			leftButton.style.visibility="hidden";
+			rightButton.style.visibility="hidden";
+		}
+}
+
+
+for (let i = 0; i<projectInfoButtons.length; i++){
 	projectInfoButtons[i].addEventListener('click', function(){
 
 		let reviewContent = document.getElementById(this.dataset.contentid);
 		let projectImage = document.getElementById(this.dataset.imageid);
-		
+
 		if (reviewContent.style.visibility == 'hidden'){
 			reviewContent.style.visibility = 'visible';
 			reviewContent.style.display = 'flex';
@@ -102,6 +161,8 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.fontSize = '1.25rem';
 			reviewContent.style.zIndex = '5000';
 			projectImage.style.transform='scale(.9)';
+			leftButton.style.visibility = "visible";
+			rightButton.style.visibility = "visible";
 			this.style.transform = 'scale(.8)';
 			this.style.transitionDuration= '1s';
 			this.style.marginBottom = '.5rem';
@@ -125,7 +186,7 @@ for (var i = 0; i<projectInfoButtons.length; i++){
 	});
 }
 
-var slide_index = 1;  
+let slide_index = 1;  
 displaySlides(slide_index);  
 
 function nextSlide(n) {  
@@ -137,11 +198,10 @@ function currentSlide(n) {
 }  
 
 allContent = document.querySelectorAll('projectContent');
+
 leftButton.addEventListener('click', function(){
-
-
 	
-	for (var i = 0; i<allContent.length; i++){
+	for (let i = 0; i<allContent.length; i++){
 		let reviewContent = document.getElementById(this.dataset.contentid);
 		
 		if (reviewContent.style.visibility=='visible'){
@@ -177,4 +237,6 @@ function displaySlides(n) {
 	slides[slide_index].style.display = "flex";  
 	slides[slide_index].style.flexDirection = "column";
 	slides[slide_index].style.alignItems = "center";
+	
 }
+
