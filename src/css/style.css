@@ -31,8 +31,6 @@ h3{
 	font-size: 2rem;
 	color: white;
 }
-
-
 .container{
 	display: grid;
 	grid-template-columns: 14rem auto;
@@ -55,13 +53,11 @@ body{
 aside a:link{
 	color: white;
 }
-
 aside a:hover{
 	color: lightgrey;
 	font-size: scale(1.2);
 	position: absolute;
 }
-
 aside a:visited{
 	color: darkgrey;
 }
@@ -107,7 +103,6 @@ nav ul li a:hover{
 	color: white;
 	font-size: 1.20em;
 }
-
 header{ 
 	grid-column-start:1;
 	grid-column-end: -1;
@@ -122,13 +117,11 @@ header{
 	align-self: center;
 	justify-content: center;
 }
-
 .header__name{
 	align-self: center;
 	font-size: 1.7em;
 	margin-top: .5em;
 }
-
 .header__role{
 	margin-top:-.2em;
 	align-self: center;
@@ -139,7 +132,6 @@ header{
 	grid-column-start:0;
 	grid-column-end: -1;
 }
-
 .bio{
 	display: flex;
 	justify-content: space-around;
@@ -148,18 +140,15 @@ header{
 	margin-top: 5.5em;
 	font-size: 1.2rem;
 }
-
 .salutation{
 	align-self: center;
 	margin-right: 3em;
 	flex-wrap: wrap;
 	font-size: 1.2em;
 }
-
 .salutation p{
 	margin-top: .85rem;
 }
-
 .bio img{
 	height: 27rem;
 	width: 28rem;
@@ -168,7 +157,6 @@ header{
 .bioImageMobile{
 	display: none;
 }
-
 .contactinfo img{
 	margin-top: 1rem;
 	height: 7rem;
@@ -478,7 +466,7 @@ title{
 .layer{
 	background-image: url(../../static/images/keyboard.jpeg);
 	background-color: none;
- 	z-index: 1; 
+ 	/*z-index: 1; */
 	/*background-repeat: no-repeat;*/
 	/*display: none;*/
 	background-position: center top;
