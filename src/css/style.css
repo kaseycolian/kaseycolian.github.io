@@ -472,7 +472,7 @@ header{
 .layer{
 	background-image: url(../../static/images/keyboard.jpeg);
 	background-color: none;
-/* 	z-index: 1; */
+ 	z-index: 1; 
 	/*background-repeat: no-repeat;*/
 	/*display: none;*/
 	background-position: center top;
@@ -485,7 +485,7 @@ header{
  body{    background-image: url(../../static/images/keyboard.jpeg);
     /* background-repeat: no-repeat; */
 	background-position: center top;
-/*  background-attachment: fixed; */
+  background-attachment: fixed; 
     background-size: 150%;
     background-repeat: repeat;
 }
