@@ -605,6 +605,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    margin-left: 0rem;
 }
 .home__link__footer{
 	margin-left: 0rem;
