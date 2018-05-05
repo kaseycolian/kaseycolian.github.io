@@ -469,12 +469,18 @@ header{
 	margin: 0;
 	padding: 0;
 }
+.layer{
+	/*background-image: url(../../static/images/keyboard.jpeg);*/
+	/*z-index: 1;*/
+	/*background-repeat: no-repeat;*/
 
- body{   background-image: url(../../static/images/keyboard.jpeg);
+}
+
+ body{    background-image: url(../../static/images/keyboard.jpeg);
     /* background-repeat: no-repeat; */
-    background-position: right top;
-    background-attachment: fixed;
-    background-size: 100;
+	background-position: center top;
+/*  background-attachment: fixed; */
+    background-size: 300%;
     background-repeat: repeat;
 }
  .container{
@@ -585,12 +591,7 @@ header{
 .carouselRightButton{
 	margin-right: -10rem;
 }*/
-.layer{
-	/*background-image: url(../../static/images/keyboard.jpeg);*/
-	z-index: -1;
-	background-repeat: no-repeat;
 
-}
 nav{
 	display: block;
 }
