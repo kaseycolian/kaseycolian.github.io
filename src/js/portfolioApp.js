@@ -134,6 +134,7 @@ function enlargeProjectImages(){
 	//create a toggle to toggle between class enlarged (scale 1.2) & regular (scale 1.0)
 		if(this.style.transform === "scale(1.4)"){
 			this.style.transform ="scale(1.00)";
+			this.style.zIndex = '1';
 			leftButton.style.visibility = "visible";
 			rightButton.style.visibility = "visible";	
 		} else{
