@@ -483,7 +483,7 @@ title{
 	/*display: none;*/
 	background-position: center top;
 	 background-attachment: fixed;
-    background-size: 150%;
+    background-size: 300%;
     background-repeat: repeat;
 
 }
@@ -492,7 +492,7 @@ title{
     /* background-repeat: no-repeat; */
 	background-position: center top;
   background-attachment: fixed; 
-    background-size: 150%;
+    background-size: 300%;
     background-repeat: repeat;
 }
  .container{
@@ -533,6 +533,9 @@ title{
 	height: 18rem;
 	width: 19rem;
 	border-radius: 4.2rem .1rem;
+}
+#desktopBioImage{
+	display: none;
 }
 .skillsList{
 	margin-top: 1rem;
