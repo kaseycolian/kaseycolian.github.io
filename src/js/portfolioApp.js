@@ -24,6 +24,7 @@ button.addEventListener('click', function(){
 	showButton.style.display = "block";
 	inner.style.marginLeft = "-14rem";
 	header.style.marginLeft = "-14rem";
+	footer.style.marginLeft = "0rem";
 	footer.style.paddingLeft="1rem";
 	showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(1)";
 	showButton.style.right = "1rem";
@@ -33,7 +34,7 @@ button.addEventListener('click', function(){
 showButton.addEventListener('click', function(){
 	navigation.style.display = "block";
 	inner.style.marginLeft = "0rem";
-	footer.style.paddingLeft = "15rem";
+	footer.style.marginLeft = "15rem";
 	document.getElementById('show-button').style.display = "none";
 });
 

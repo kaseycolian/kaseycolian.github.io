@@ -299,14 +299,15 @@ header{
 		grid-column-end: -1;
 		display: flex;
 		justify-content: space-between;
-		padding-left:15rem;
+		padding-left:0rem;
+		margin-left: 15rem;
 		padding-right: 1rem;
 		color: white;
 		font-size: 1.2rem;
 	}
-	.home__link__footer{
+/*	.home__link__footer{
 		margin-left: 23em;
-	}
+	}*/
 
 	aside button, .projectDetails{
 		background: radial-gradient(circle at center, black 77%, rgba(228,	8,	54, 1));
@@ -597,7 +598,13 @@ aside{
 	display: none;
 }
 footer{
-	display: block;
+	display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 .home__link__footer{
 	margin-left: 0rem;
