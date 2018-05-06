@@ -102,15 +102,6 @@ for (let i = 0; i<projectImages.length; i++){
 	
 };
 
-// function screenTest(click){
-// 	if (click.matches){
-// 		mobileView.removeListener()
-// 	}
-// 	else{
-
-// 	}
-// }
-
 //rescaling project images on escape
 for (let i = 0; i<projectImages.length; i++){
 	document.addEventListener('keydown', event=>{
