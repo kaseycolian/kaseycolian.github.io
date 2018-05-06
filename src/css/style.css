@@ -499,7 +499,9 @@ h2{
 }
 .header__role{
 	text-align: center;
-}
+    margin-left: .5rem;
+    margin-right: .5rem;
+ }
 .header__name{
 	margin-top: 0;
 }
