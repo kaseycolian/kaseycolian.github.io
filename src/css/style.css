@@ -586,6 +586,11 @@ h2{
 	display: grid;
 	grid-template-rows: 1fr;
 }
+.content{
+	margin-right: .5rem;
+	margin-left: .5rem;
+	text-align: center;
+}
 #left, #right{
 	height: 2rem;
 	width: 2rem;
