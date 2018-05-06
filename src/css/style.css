@@ -47,8 +47,8 @@ body{
 .layer{
 	background-color: rgba(138, 0, 230, .1);
 /*	background-position: right top;
-	background-attachment: fixed;
-	background-size: 100%;*/
+	background-attachment: fixed;*/
+	background-size: cover;
 }
 aside a:link{
 	color: white;
@@ -466,7 +466,7 @@ title{
 }
 .layer{
 	/*background-image: url(../../static/images/keyboard.jpeg);*/
-	background-color: none;
+	/*background-color: none;*/
  	/*z-index: 1; */
 	/*background-repeat: no-repeat;*/
 	/*display: none;*/
