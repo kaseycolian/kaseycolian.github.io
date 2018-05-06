@@ -476,7 +476,7 @@ title{
 
 }
 h2{
-	font-size: 2.85rem;
+	font-size: 2.25rem;
 }
 
  body{    
@@ -484,7 +484,8 @@ h2{
     /* background-repeat: no-repeat; */
 	background-position: center top;
   	background-attachment: fixed; 
-    background-size: cover;
+  	 background-size: auto 125%;
+    /*background-size: cover;*/
     /*background-repeat: repeat-y;*/
 }
  .container{
