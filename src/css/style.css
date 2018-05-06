@@ -482,7 +482,7 @@ title{
 	background-position: center top;
   	background-attachment: fixed; 
     background-size: cover;
-    background-repeat: repeat-y;
+    /*background-repeat: repeat-y;*/
 }
  .container{
 	display: block;
