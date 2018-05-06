@@ -481,7 +481,7 @@ title{
     /* background-repeat: no-repeat; */
 	background-position: center top;
   	background-attachment: fixed; 
-    background-size: 290%;
+    background-size: cover;
     background-repeat: repeat-y;
 }
  .container{
