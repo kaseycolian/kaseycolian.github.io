@@ -252,6 +252,7 @@ header{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-top: .5rem;
 	}
 
 	#projectContent{
@@ -484,7 +485,7 @@ h2{
     /* background-repeat: no-repeat; */
 	background-position: center top;
   	background-attachment: fixed; 
-  	 background-size: auto 125%;
+  	 background-size: 100% 105%;
     /*background-size: cover;*/
     /*background-repeat: repeat-y;*/
 }
