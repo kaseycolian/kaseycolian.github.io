@@ -360,6 +360,9 @@ aside button:hover, .projectDetails:hover{
 	background-image: radial-gradient(circle at center, black 80%, #FE80FE);
 	box-shadow: .25rem .25rem .75rem black, -.25rem -.25rem .75rem black;
 }
+#left:focus, #right:focus{
+	outline: 0;
+}
 #left{
 	padding-right: .2rem;
 }
@@ -598,7 +601,6 @@ background-attachment: fixed;*/
 	.carouselRightButton {
 		margin-left: -12rem;
 	}
-
 	nav{
 		display: block;
 	}
