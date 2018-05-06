@@ -485,7 +485,7 @@ h2{
     /* background-repeat: no-repeat; */
 	background-position: center top;
   	background-attachment: fixed; 
-  	 background-size: 100% 105%;
+  	background-size: 50rem 70rem;
     /*background-size: cover;*/
     /*background-repeat: repeat-y;*/
 }
