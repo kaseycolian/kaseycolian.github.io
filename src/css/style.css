@@ -469,10 +469,10 @@ title{
  	/*z-index: 1; */
 	/*background-repeat: no-repeat;*/
 	/*display: none;*/
-	background-position: center top;
-	 background-attachment: fixed;
+/*	background-position: center top;
+	 background-attachment: fixed;*/
     /*background-size: 300%;*/
-    background-repeat: repeat;
+    /*background-repeat: repeat;*/
 
 }
 
@@ -481,7 +481,7 @@ title{
     /* background-repeat: no-repeat; */
 	background-position: center top;
   	/*background-attachment: fixed; */
-    background-size: 175%;
+    background-size: 255%;
     background-repeat: repeat;
 }
  .container{
