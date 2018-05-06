@@ -464,24 +464,24 @@ title{
 	display: none;
 }
 .layer{
-	background-image: url(../../static/images/keyboard.jpeg);
+	/*background-image: url(../../static/images/keyboard.jpeg);*/
 	background-color: none;
  	/*z-index: 1; */
 	/*background-repeat: no-repeat;*/
 	/*display: none;*/
 	background-position: center top;
 	 background-attachment: fixed;
-    background-size: 300%;
+    /*background-size: 300%;*/
     background-repeat: repeat;
 
 }
 
  body{    
- 	background-image: url(../../static/images/keyboard.jpeg);
+ 	/*background-image: url(../../static/images/keyboard.jpeg);*/
     /* background-repeat: no-repeat; */
 	background-position: center top;
-  background-attachment: fixed; 
-    background-size: 300%;
+  	/*background-attachment: fixed; */
+    background-size: 175%;
     background-repeat: repeat;
 }
  .container{
