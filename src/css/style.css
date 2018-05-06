@@ -353,7 +353,7 @@ header{
 			}
 
 			.projectHead h2{
-				font-size: 2.7rem;
+				font-size: 2.85rem;
 			}
 
 			.carousel{
@@ -475,9 +475,12 @@ title{
     /*background-repeat: repeat;*/
 
 }
+h2{
+	font-size: 2.85rem;
+}
 
  body{    
- 	background-image: url(../../static/images/keyboardMobile.jpg);
+ 	background-image: url(../../static/images/keyboardCropped.jpg);
     /* background-repeat: no-repeat; */
 	background-position: center top;
   	background-attachment: fixed; 
@@ -491,6 +494,9 @@ title{
 }
 .inner{
 	display: block;
+}
+.header__role{
+	text-align: center;
 }
 .header__name{
 	margin-top: 0;
