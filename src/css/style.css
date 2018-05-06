@@ -360,7 +360,7 @@ aside button:hover, .projectDetails:hover{
 	background-image: radial-gradient(circle at center, black 80%, #FE80FE);
 	box-shadow: .25rem .25rem .75rem black, -.25rem -.25rem .75rem black;
 }
-#left:focus, #right:focus{
+#left:focus, #right:focus, #left:active, #right:active, #left:focus-within, #right:focus-within{
 	outline: 0;
 }
 #left{
