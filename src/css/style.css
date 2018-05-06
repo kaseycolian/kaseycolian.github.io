@@ -477,11 +477,11 @@ title{
 }
 
  body{    
- 	/*background-image: url(../../static/images/keyboard.jpeg);*/
+ 	background-image: url(../../static/images/keyboardMobile.jpg);
     /* background-repeat: no-repeat; */
 	background-position: center top;
   	background-attachment: fixed; 
-    background-size: 100% 100%;
+    background-size: cover;
     /*background-repeat: repeat-y;*/
 }
  .container{
