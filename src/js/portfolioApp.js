@@ -85,12 +85,31 @@ const projectImages = document.querySelectorAll('.projectImages');
 const projectInfoButtons = document.querySelectorAll('.projectDetails');
 const leftButton = document.getElementById('left');
 const rightButton =document.getElementById('right');
+const mobileView = window.matchMedia('(max-width: 700px)');
 
 
 //enlarging project images on click & descaling on click of image:
 for (let i = 0; i<projectImages.length; i++){
-	projectImages[i].addEventListener('click', enlargeProjectImages);
+	if (!(mobileView.matches)){
+		projectImages[i].addEventListener('click', enlargeProjectImages);
+	}
+	// else{
+	// 	mobileView.removeListener(projectImages[i]);
+	// 	// break;
+	// }
+	
+		// mobileView.removeListener(event);
+	
 };
+
+// function screenTest(click){
+// 	if (click.matches){
+// 		mobileView.removeListener()
+// 	}
+// 	else{
+
+// 	}
+// }
 
 //rescaling project images on escape
 for (let i = 0; i<projectImages.length; i++){
@@ -132,6 +151,7 @@ for (let i = 0; i<projectImages.length; i++){
 function enlargeProjectImages(){
 	let projectImage = document.getElementById(this.dataset.imageid);
 	//create a toggle to toggle between class enlarged (scale 1.2) & regular (scale 1.0)
+
 		if(this.style.transform === "scale(1.4)"){
 			this.style.transform ="scale(1.00)";
 			this.style.zIndex = '1';
