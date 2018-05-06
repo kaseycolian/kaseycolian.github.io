@@ -480,9 +480,9 @@ title{
  	/*background-image: url(../../static/images/keyboard.jpeg);*/
     /* background-repeat: no-repeat; */
 	background-position: center top;
-  	/*background-attachment: fixed; */
-    background-size: 200%;
-    background-repeat: repeat;
+  	background-attachment: fixed; 
+    background-size: 290%;
+    background-repeat: repeat-y;
 }
  .container{
 	display: block;
