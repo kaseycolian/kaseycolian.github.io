@@ -502,6 +502,9 @@ h2{
     margin-left: .5rem;
     margin-right: .5rem;
  }
+ .header__role h2{
+ 	  font-size: 1.8rem;
+ }
 .header__name{
 	margin-top: 0;
 }
