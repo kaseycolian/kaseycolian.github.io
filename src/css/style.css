@@ -170,6 +170,7 @@ header{
 	width: 42rem;
 	border: solid black .1rem;
 	border-radius: .35rem;
+	transform: scale(1.0);
 }
 
 /*article img:hover{

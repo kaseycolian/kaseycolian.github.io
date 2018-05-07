@@ -196,25 +196,49 @@ allContent = document.querySelectorAll('projectContent');
 
 let touchStartX = 0;
 let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
 
 //swipe left/right on project images for mobile
 for (let i = 0; i<projectImages.length; i++){
+	// let projectImage = document.getElementById(this.dataset.imageid);
 	projectImages[i].addEventListener('touchstart', function(event){
 		// let gestureZone = document.getElementById(this.dataset.gestureZone);
 		touchStartX = event.changedTouches[0].screenX;
+		touchStartY = event.changedTouches[0].screenY;
 	}, false);
 	projectImages[i].addEventListener('touchend', function(event){
 		touchEndX = event.changedTouches[0].screenX;
+		touchEndY = event.changedTouches[0].screenY;
 		handleGesture();
 	}, false);
 }
 
+
 function handleGesture(){
-	if (touchEndX < touchStartX){
+	if ((touchEndX - touchStartX) > 20){
 		displaySlides(slide_index+1);
+		console.log(touchEndX + ' is touchEndX');
+		console.log(touchStartX + ' is touchStartX');
+		console.log('swipe left');
 	}
-	if (touchEndX > touchStartX){
+	if ((touchStartX - touchEndX) > 20) {
 		displaySlides(slide_index-1);
+		console.log(touchEndX + ' is touchEndX');
+		console.log(touchStartX + ' is touchStartX');
+		console.log('swipe right');
+	}
+	// if ((touchEndY > touchStartY) || (touchEndY < touchStartY)){
+	// 	displaySlides(slide_index);
+	// }
+	// if (touchEndY === touchStartY){
+	// 	displaySlides(slide_index);
+	// }
+	// if (touchEndX == touchStartX){
+	// 	displaySlides(slide_index);
+	// }
+	else{
+		displaySlides(slide_index);
 	}
 }
 
