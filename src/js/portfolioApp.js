@@ -216,27 +216,12 @@ for (let i = 0; i<projectImages.length; i++){
 
 
 function handleGesture(){
-	if ((touchEndX - touchStartX) > 30){
+	if ((touchEndX - touchStartX) > 35){
 		displaySlides(slide_index+1);
-		console.log(touchEndX + ' is touchEndX');
-		console.log(touchStartX + ' is touchStartX');
-		console.log('swipe left');
 	}
-	if ((touchStartX - touchEndX) > 30) {
+	if ((touchStartX - touchEndX) > 35) {
 		displaySlides(slide_index-1);
-		console.log(touchEndX + ' is touchEndX');
-		console.log(touchStartX + ' is touchStartX');
-		console.log('swipe right');
 	}
-	// if ((touchEndY > touchStartY) || (touchEndY < touchStartY)){
-	// 	displaySlides(slide_index);
-	// }
-	// if (touchEndY === touchStartY){
-	// 	displaySlides(slide_index);
-	// }
-	// if (touchEndX == touchStartX){
-	// 	displaySlides(slide_index);
-	// }
 	else{
 		displaySlides(slide_index);
 	}
