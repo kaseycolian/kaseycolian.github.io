@@ -100,14 +100,11 @@
 				</div>
 					<div class = "projectContainer"/>
 					<article class="project" id = "musicProject">
-
-						<div class="showSlide"> 
-						
-							<img class = "projectImages" id = "reviewsImage" src="static/images/ReviewsFull.jpg" alt="Screenshot of Reviews Project"><a name= "musicProjectStart"></a>
+						<div class="showSlide"> 						
+							<img class = "projectImages" id = "reviewsImage" data-gestureZone = 'reviewImageZone' src="static/images/ReviewsFull.jpg" alt="Screenshot of Reviews Project"><a name= "musicProjectStart"></a>
 							<div class="content">
 								<h3>Music Artists Reviews</h3>
 								<a href="#musicProjectStart"><button class="projectDetails" data-contentid = 'musicReviews' data-imageid = 'reviewsImage'>Show Project Details</button></a>
-
 								<div class="projectContent" id = 'musicReviews' style="visibility: hidden; display: none;">
 									<p> Music Reviews was a project involving the creation of a website through SpringMVC, using TDD, Java and the creation of a database with JPA.  The front was designed in Thymeleaf, using Flexbox and Grid in CSS while applying AJAX and Javascript.  The data for the views is accessed through a Spring Controller.  Musical artists are `organized by genre.  Users are able to create comments to be displayed on each musical artist's page. Artists were also organized by tags which users are able to create and delete from each artist's page using AJAX.  Each tag will direct user to all artists associated with that tag.</p>
 									<p>This project was created in 3 weekend iterations as a project assignment for We Can Code IT.</p>
@@ -117,13 +114,11 @@
 						</div>
 					</article>
 					<article class="project" id = "amokProject">
-						<div class="showSlide">  
-						
-							<img class = "projectImages" id = "amokImage" src="static/images/lair-amok-java.jpg" alt="Screenshot of Medieval Lair Amok Project"><a name="amokProjectStart"></a>
+						<div class="showSlide">						
+							<img class = "projectImages" id = "amokImage" data-gestureZone = 'amokeImageZone' src="static/images/lair-amok-java.jpg" alt="Screenshot of Medieval Lair Amok Project"><a name="amokProjectStart"></a>
 							<div class="content">
 								<h3>Virtual Medieval Lair Amok</h3>
 								<a href="#amokProjectStart"><button class="projectDetails" data-contentid = 'lairAmok' data-imageid = 'amokImage'>Show Project Details</button></a>
-
 								<div class ="projectContent" id = 'lairAmok' style="visibility: hidden; display: none;">
 									<p>Upgraded version of Virtual Medieval Lair.  Written in Java with TDD.  Implemented interfaces and extended classes to create different abilities for different types of creatures using polymorphism.  Game started with an already-programmed list of creatures and allowed the game player to add or remove creature. Introduced new levels that the game player needed to help control.</p>
 									<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-amok">See Full Project Here</a></button>
@@ -132,13 +127,11 @@
 						</div>
 					</article>
 					<article class="project" id = "gardenProject">
-						<div class="showSlide">  
-
-							<img class = "projectImages" id = "gardenImage" src="static/images/purple-github.png" alt="Screenshot of Watch Your Garden Grow Project"><a name="gardenProjectStart"></a>
+						<div class="showSlide">
+							<img class = "projectImages" id = "gardenImage" data-gestureZone = 'gardenImageZone' src="static/images/purple-github.png" alt="Screenshot of Watch Your Garden Grow Project"><a name="gardenProjectStart"></a>
 							<div class="content">
 								<h3>Watch Your Garden Grow</h3>
 								<a href="#gardenProjectStart"><button class="projectDetails" data-contentid = 'garden' data-imageid = 'gardenImage'>Show Project Details</button></a>
-
 								<div class ="projectContent" id = 'garden' style="visibility: hidden; display: none;">
 									<p>Three week project created on a team of 7 at We Can Code IT.  Developed through Agile methodologies and pair programming using SCRUM.  Users are able to enter their zip code to return plants available for their plant habitable zone using an AJAX call, returning JSON objects.  The users are able to see more details on each plant, displayed in a modal window.  Plants can be added and removed from the desired plan, which is then generated with the appropriate planting date for their zip code.</p>
 									<p>My role focused entirely on the front end.  The main view is designed using a responsive layout for the returned objects from the AJAX call, so that no matter how many or little plants were returned for the zip code, the view was easy to navigate.  The layout was designed using CSS3 and DOM manipulation through Vanilla JavaScript without the assistance of any frameworks.  At the end of each 3-day sprint, the front end was able to present a minimal viable product using the features designed from the back end.  The back end was created through Java, JPA relational mapping, Spring MVC, and rest controllers to fuel the front end.</p>
@@ -150,7 +143,7 @@
 					<article class="project" id = "lairProject">
 						<div class="showSlide">
 						<a name= "projectStart"></a>
-							<img class = "projectImages" id ='lairImage' src="static/images/previous-lair-java.jpg" alt="Screenshot of Virtual Medieval Lair Project">
+							<img class = "projectImages" id ='lairImage' data-gestureZone = 'lairImageZone' src="static/images/previous-lair-java.jpg" alt="Screenshot of Virtual Medieval Lair Project">
 							<div class="content">
 								<h3>Virtual Medieval Lair</h3>
 								<button class="projectDetails" data-contentid = 'lair' data-imageid = 'lairImage'>Show Project Details</button> 
@@ -161,9 +154,6 @@
 							</div>
 						</div>
 					</article>
-					
-
-
 					</div>
 					<div class = "carouselRightButton">
 					<button class="carouselNavButton" id="right">></button> 
@@ -173,8 +163,7 @@
 		</div>
 	</div>
 <footer id="footer">
-	<p>2018</p>
-	
+	<p>2018</p>	
 	<p>Website written with HTML5, CSS3, and JavaScript without frameworks</p>
 	<div class="home__link__footer">
 		<a href="#homelink">Back to the start</a>
@@ -187,7 +176,6 @@
 			<span class="close">&times</span>
 			Junior software developer who believes the world is a village and we each have our roles to make a better life for all.  My passion, my role, is optimizing user experience. Software development and front-end design provide an outlet that allow me to create products which revolve around human intuition.   Currently enrolled at We Can Code IT!, a submersive 14-week program focusing on Java, TDD, web-design using grid, Flexbox, CSS, as well as Javascript. I obtained a bachelor's degree in Psychology focused in cognitive development, which helps provide insight on real-world user mentality.
 		</div>
-
 	</div>
 	<script src="./src/js/portfolioApp.js"></script>
 </body>
