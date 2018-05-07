@@ -10,13 +10,13 @@
 }
 a:link {
 	text-decoration: none;
-	color: var(--blue);
+	color: #f33bc5;
 }
 a:visited{
-	color: darkgrey;
+	color: #f3b3fd;
 }
 a:hover{
-	color: #6188B6;
+	color: teal;
 }
 
 h1{
@@ -284,6 +284,10 @@ footer{
 	color: white;
 	font-size: 1.2rem;
 }
+/*#startLink:visited{
+	color: teal;
+}*/
+
 aside button, .projectDetails{
 	background: radial-gradient(circle at center, black 77%, rgba(228,	8,	54, 1));
 	box-shadow: 0 0 13px red;

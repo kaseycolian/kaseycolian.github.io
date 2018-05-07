@@ -193,34 +193,43 @@ let slide_index = 1;
 displaySlides(slide_index);  
 allContent = document.querySelectorAll('projectContent');
 
-
-let touchStartX = 0;
-let touchEndX = 0;
-let touchStartY = 0;
-let touchEndY = 0;
+function initializeSlideFunctionMobile(){
+	let touchStartX = 0;
+	let touchEndX = 0;
+	let touchStartY = 0;
+	let touchEndY = 0;
 
 //swipe left/right on project images for mobile
-for (let i = 0; i<projectImages.length; i++){
-	// let projectImage = document.getElementById(this.dataset.imageid);
-	projectImages[i].addEventListener('touchstart', function(event){
+	for (let i = 0; i<projectImages.length; i++){
+		// let projectImage = document.getElementById(this.dataset.imageid);
+		projectImages[i].addEventListener('touchstart', function(event){
 		// let gestureZone = document.getElementById(this.dataset.gestureZone);
-		touchStartX = event.changedTouches[0].screenX;
-		touchStartY = event.changedTouches[0].screenY;
-	}, false);
-	projectImages[i].addEventListener('touchend', function(event){
-		touchEndX = event.changedTouches[0].screenX;
-		touchEndY = event.changedTouches[0].screenY;
-		handleGesture();
-	}, false);
+			touchStartX = event.changedTouches[0].screenX;
+			touchStartY = event.changedTouches[0].screenY;
+		}, false);
+		projectImages[i].addEventListener('touchend', function(event){
+			touchEndX = event.changedTouches[0].screenX;
+			touchEndY = event.changedTouches[0].screenY;
+			handleGesture(touchStartX, touchEndX, touchStartY, touchEndY);
+		}, false);
+	}
 }
 
+initializeSlideFunctionMobile();
 
-function handleGesture(){
-	if ((touchEndX - touchStartX) > 35){
+function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY){
+	const swipeRight = (touchEndX - touchStartX) > 45;
+	const swipeLeft = (touchStartX - touchEndX) > 45;
+	const swipeUp = (touchStartY - touchEndY) > 20;
+	const swipeDown = (touchEndY - touchStartY) > 20;
+	if (swipeRight){
 		displaySlides(slide_index+1);
 	}
-	if ((touchStartX - touchEndX) > 35) {
+	if (swipeLeft){
 		displaySlides(slide_index-1);
+	}
+	if ((swipeLeft || swipeRight) && (swipeUp || swipeDown)){
+		displaySlides(slide_index);
 	}
 	else{
 		displaySlides(slide_index);
