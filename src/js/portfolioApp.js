@@ -35,6 +35,7 @@ showButton.addEventListener('click', function(){
 	navigation.style.display = "block";
 	inner.style.marginLeft = "0rem";
 	footer.style.marginLeft = "15rem";
+	header.style.marginLeft = "0rem";
 	document.getElementById('show-button').style.display = "none";
 });
 
