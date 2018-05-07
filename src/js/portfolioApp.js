@@ -216,13 +216,13 @@ for (let i = 0; i<projectImages.length; i++){
 
 
 function handleGesture(){
-	if ((touchEndX - touchStartX) > 20){
+	if ((touchEndX - touchStartX) > 30){
 		displaySlides(slide_index+1);
 		console.log(touchEndX + ' is touchEndX');
 		console.log(touchStartX + ' is touchStartX');
 		console.log('swipe left');
 	}
-	if ((touchStartX - touchEndX) > 20) {
+	if ((touchStartX - touchEndX) > 30) {
 		displaySlides(slide_index-1);
 		console.log(touchEndX + ' is touchEndX');
 		console.log(touchStartX + ' is touchStartX');
