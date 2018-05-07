@@ -197,10 +197,10 @@ allContent = document.querySelectorAll('projectContent');
 let touchStartX = 0;
 let touchEndX = 0;
 
-
+//swipe left/right on project images for mobile
 for (let i = 0; i<projectImages.length; i++){
 	projectImages[i].addEventListener('touchstart', function(event){
-		let gestureZone = document.getElementById(this.dataset.gestureZone);
+		// let gestureZone = document.getElementById(this.dataset.gestureZone);
 		touchStartX = event.changedTouches[0].screenX;
 	}, false);
 	projectImages[i].addEventListener('touchend', function(event){
@@ -212,6 +212,9 @@ for (let i = 0; i<projectImages.length; i++){
 function handleGesture(){
 	if (touchEndX < touchStartX){
 		displaySlides(slide_index+1);
+	}
+	if (touchEndX > touchStartX){
+		displaySlides(slide_index-1);
 	}
 }
 
