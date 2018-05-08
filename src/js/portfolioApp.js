@@ -218,10 +218,10 @@ function initializeSlideFunctionMobile(){
 initializeSlideFunctionMobile();
 
 function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY){
-	const swipeRight = (touchEndX - touchStartX) > 100;
-	const swipeLeft = (touchStartX - touchEndX) > 100;
-	const swipeUp = (touchStartY - touchEndY) > 10;
-	const swipeDown = (touchEndY - touchStartY) > 10;
+	const swipeRight = (touchEndX - touchStartX) > 125;
+	const swipeLeft = (touchStartX - touchEndX) > 125;
+	const swipeUp = (touchStartY - touchEndY) > 0;
+	const swipeDown = (touchEndY - touchStartY) > 0;
 	if (swipeRight){
 		displaySlides(slide_index+1);
 	}
