@@ -228,7 +228,7 @@ function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY){
 	if (swipeLeft){
 		displaySlides(slide_index-1);
 	}
-	if ((swipeLeft || swipeRight) && (swipeUp || swipeDown)){
+	if (((touchEndX - touchStartX) > 0 || (touchStartX - touchEndX) > 0) && (swipeUp || swipeDown)){
 		displaySlides(slide_index);
 	}
 	else{
