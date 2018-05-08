@@ -218,8 +218,8 @@ function initializeSlideFunctionMobile(){
 initializeSlideFunctionMobile();
 
 function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY){
-	const swipeRight = (touchEndX - touchStartX) > 45;
-	const swipeLeft = (touchStartX - touchEndX) > 45;
+	const swipeRight = (touchEndX - touchStartX) > 100;
+	const swipeLeft = (touchStartX - touchEndX) > 100;
 	const swipeUp = (touchStartY - touchEndY) > 10;
 	const swipeDown = (touchEndY - touchStartY) > 10;
 	if (swipeRight){
