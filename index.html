@@ -98,7 +98,21 @@
 				<div class = "carouselLeftNav">
 					<button class="carouselNavButton" id="left"><</button>
 				</div>
-					<div class = "projectContainer"/>
+					<div class = "projectContainer">
+					<article class="project" id = "gardenProject">
+						<div class="showSlide">
+							<img class = "projectImages" id = "gardenImage" data-gestureZone = 'gardenImageZone' src="static/images/watch-your-garden-grow-results.jpg" alt="Screenshot of Watch Your Garden Grow Project"><a name="gardenProjectStart"></a>
+							<div class="content">
+								<h3>Watch Your Garden Grow</h3>
+								<a href="#gardenProjectStart"><button class="projectDetails" data-contentid = 'garden' data-imageid = 'gardenImage'>Show Project Details</button></a>
+								<div class ="projectContent" id = 'garden' style="visibility: hidden; display: none;">
+									<p>Three week project created on a team of 7 at We Can Code IT.  Developed through Agile methodologies and pair programming using SCRUM.  Users are able to enter their zip code to return plants available for their plant habitable zone using an AJAX call, returning JSON objects.  The users are able to see more details on each plant, displayed in a modal window.  Plants can be added and removed from the desired plan, which is then generated with the appropriate planting date for their zip code.</p>
+									<p>My role focused entirely on the front end.  The main view is designed using a responsive layout for the returned objects from the AJAX call, so that no matter how many or little plants were returned for the zip code, the view was easy to navigate.  The layout was designed using CSS3 and DOM manipulation through Vanilla JavaScript without the assistance of any frameworks.  At the end of each 3-day sprint, the front end was able to present a minimal viable product using the features designed from the back end.  The back end was created through Java, JPA relational mapping, Spring MVC, and rest controllers to fuel the front end.</p>
+									<button class="btn"><a href="https://github.com/watch-your-garden-grow/watch-your-garden-grow">See Full Project Here</a></button>
+								</div>
+							</div>
+						</div>
+					</article>
 					<article class="project" id = "musicProject">
 						<div class="showSlide"> 						
 							<img class = "projectImages" id = "reviewsImage" data-gestureZone = 'reviewImageZone' src="static/images/ReviewsFull.jpg" alt="Screenshot of Reviews Project"><a name= "musicProjectStart"></a>
@@ -120,26 +134,13 @@
 								<h3>Virtual Medieval Lair Amok</h3>
 								<a href="#amokProjectStart"><button class="projectDetails" data-contentid = 'lairAmok' data-imageid = 'amokImage'>Show Project Details</button></a>
 								<div class ="projectContent" id = 'lairAmok' style="visibility: hidden; display: none;">
-									<p>Upgraded version of Virtual Medieval Lair.  Written in Java with TDD.  Implemented interfaces and extended classes to create different abilities for different types of creatures using polymorphism.  Game started with an already-programmed list of creatures and allowed the game player to add or remove creature. Introduced new levels that the game player needed to help control.</p>
+									<p>Upgraded version of Virtual Medieval Lair.  Written in Java by TDD.  Implemented interfaces and extended classes to create different abilities for different types of creatures.  Game started with an already-programmed list of creatures and allowed the game player to add or remove creature. Introduced new levels that the game player needs control.</p>
 									<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-amok">See Full Project Here</a></button>
 								</div>
 							</div>
 						</div>
 					</article>
-					<article class="project" id = "gardenProject">
-						<div class="showSlide">
-							<img class = "projectImages" id = "gardenImage" data-gestureZone = 'gardenImageZone' src="static/images/watch-your-garden-grow-results.jpg" alt="Screenshot of Watch Your Garden Grow Project"><a name="gardenProjectStart"></a>
-							<div class="content">
-								<h3>Watch Your Garden Grow</h3>
-								<a href="#gardenProjectStart"><button class="projectDetails" data-contentid = 'garden' data-imageid = 'gardenImage'>Show Project Details</button></a>
-								<div class ="projectContent" id = 'garden' style="visibility: hidden; display: none;">
-									<p>Three week project created on a team of 7 at We Can Code IT.  Developed through Agile methodologies and pair programming using SCRUM.  Users are able to enter their zip code to return plants available for their plant habitable zone using an AJAX call, returning JSON objects.  The users are able to see more details on each plant, displayed in a modal window.  Plants can be added and removed from the desired plan, which is then generated with the appropriate planting date for their zip code.</p>
-									<p>My role focused entirely on the front end.  The main view is designed using a responsive layout for the returned objects from the AJAX call, so that no matter how many or little plants were returned for the zip code, the view was easy to navigate.  The layout was designed using CSS3 and DOM manipulation through Vanilla JavaScript without the assistance of any frameworks.  At the end of each 3-day sprint, the front end was able to present a minimal viable product using the features designed from the back end.  The back end was created through Java, JPA relational mapping, Spring MVC, and rest controllers to fuel the front end.</p>
-									<button class="btn"><a href="https://github.com/watch-your-garden-grow/watch-your-garden-grow">See Full Project Here</a></button>
-								</div>
-							</div>
-						</div>
-					</article>
+					
 					<article class="project" id = "lairProject">
 						<div class="showSlide">
 						<a name= "projectStart"></a>
@@ -148,7 +149,7 @@
 								<h3>Virtual Medieval Lair</h3>
 								<button class="projectDetails" data-contentid = 'lair' data-imageid = 'lairImage'>Show Project Details</button> 
 								<div class ="projectContent" id = 'lair' style="visibility: hidden; display: none;">
-									<p>Previous version of Virtual Medieval Lair Amok.  Written in Java with TDD.  User participated in a game taking care of creatures at The Lair.  The creatures were stored in a HashMap via name as the key.  Players were able to care for the different creatures, which effect different levels simultaneously.  Starting levels were encapsulated. Game players were able to add and remove creatures.</p>
+									<p>One of the first Java programs I created.  Written in Java by TDD.  User participated in a virtual pet game taking care of creatures at The Lair through the console.  The creatures were stored in a HashMap via name as the key.  Players are able to care for the different creatures, which effect different levels simultaneously.  At the end of each round, a tick effect was applied effecting all levels of each creature.  Users are able to add and remove creatures.</p>
 									<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-shelter">See Full Project Here</a></button>
 								</div>
 							</div>
