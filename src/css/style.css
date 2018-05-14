@@ -460,12 +460,12 @@ background-attachment: fixed;*/
 	}
 	body{    
 		background-image: url(../../static/images/keyboardCropped.jpg);
-	/* background-repeat: no-repeat; */
 		background-position: center top;
 		background-attachment: fixed; 
 		background-size: 50rem 70rem;
-	/*background-size: cover;*/
-	/*background-repeat: repeat-y;*/
+	}
+	.btn{
+		margin-bottom: 2.5rem;
 	}
 	.container{
 		display: block;
@@ -543,11 +543,6 @@ background-attachment: fixed;*/
 		margin-right: 3rem;
 		grid-gap: 1.1rem;
 		text-align: center
-	/*	display: flex;
-		flex-direction: column;
-		margin-right: 4rem;
-		margin-left: 4rem;
-		justify-content: center;*/
 	}
 	.skills{
 		display: block;
@@ -568,6 +563,8 @@ background-attachment: fixed;*/
 		margin-top: 2rem;
 		text-align: center;
 		font-size: 3rem;
+		margin-left: 2rem;
+    	margin-right: 2rem;
 	}
 	.contact__links{
 		justify-content: center;
@@ -575,10 +572,16 @@ background-attachment: fixed;*/
 		margin-top: 0rem;
 		flex-wrap: wrap;
 	}
+	.projectContainer{
+		
+	}
 	.projectSection{
 		display: grid;
 		grid-template-rows: 1fr;
 	}
+	.projectDetails {
+   		margin-bottom: 4rem;
+   	}
 	.projectHead{
 		margin-top: 1.75rem;
 		margin-bottom: 0;
@@ -588,6 +591,9 @@ background-attachment: fixed;*/
 		margin-left: .5rem;
 		margin-top: 4rem;
 		text-align: center;
+	}
+	.projectImages {
+    	height: 23rem;
 	}
 	#left, #right{
 		height: 2.75rem;
@@ -599,7 +605,7 @@ background-attachment: fixed;*/
 		z-index: 2;
 	}
 	.carouselLeftNav, .carouselRightButton{
-		margin-top: 27.5rem;
+		margin-top: 24rem;
 	}
 	.carouselLeftNav{
 		margin-right: -12rem;

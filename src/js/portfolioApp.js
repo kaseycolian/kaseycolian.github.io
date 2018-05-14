@@ -181,7 +181,12 @@ for (let i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.paddingLeft = "1rem";
 			reviewContent.style.paddingRight = "1rem";
 			projectImage.style.transform='scale(1)';
-			this.style.marginBottom = '7rem';
+			if (mobileView.matches){
+				this.style.marginBottom = '4rem';
+			}
+			else {
+				this.style.marginBottom = '7rem';
+			}
 			this.style.transform = "scale(1)";
 			this.style.transitionDuration= '1s';
 			this.innerHTML = 'Show Project Details';
