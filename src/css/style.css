@@ -490,6 +490,9 @@ aside button:hover, .projectDetails:hover{
 	}
 }
 @media only screen and (max-width: 900px){
+	.carousel h3{
+		font-size: 1.5rem;
+	}
 	.projectImages{
 		height: 22rem;
 		width: 22rem;
@@ -656,6 +659,7 @@ aside button:hover, .projectDetails:hover{
 		display: flex;
 		justify-content: center;
 		z-index: 2;
+		margin-top: 0rem
 	}
 	.carouselLeftNav, .carouselRightButton{
 		margin-top: 24rem;
