@@ -7,7 +7,6 @@ button = document.createElement('button');
 button.innerHTML = 'Hide Navigation';	
 navMenu.appendChild(button);
 button.classList.add('hide-side-button');
-
 showButton = document.createElement('button');
 showButton.innerHTML = 'Show Nav';
 container.appendChild(showButton);
@@ -28,6 +27,7 @@ button.addEventListener('click', function(){
 	footer.style.paddingLeft="1rem";
 	showButton.style.transform = "rotateX(28.5deg) rotateY(8deg) rotateZ(15deg) scale(1)";
 	showButton.style.right = "1rem";
+	footer.style.justifyContent = "space-betwen";
 });
 
 //showing side Nav:
@@ -36,6 +36,7 @@ showButton.addEventListener('click', function(){
 	inner.style.marginLeft = "0rem";
 	footer.style.marginLeft = "15rem";
 	header.style.marginLeft = "0rem";
+	footer.style.justifyContent = "space-between";
 	document.getElementById('show-button').style.display = "none";
 });
 
@@ -108,17 +109,6 @@ for (let i = 0; i<projectImages.length; i++){
 	});		
 }
 
-// rescaling project images on click outside image
-// document.addEventListener('click', function(){
-// 	let projectImage = document.getElementById(this.dataset.imageid);
-// 	for (let i = 0; i<projectImages.length; i++){
-// 		if(projectImages[i].style.transform === "scale(1.4)"){
-// 			projectImages[i].style.transform ="scale(1.00)";
-// 			leftButton.style.visibility = "visible";
-// 			rightButton.style.visibility = "visible";
-// 		}
-// 	}
-// });
 const body = document.getElementsByTagName('BODY');
 for (let i = 0; i<projectImages.length; i++){
 	if(projectImages[i].style.transform === "scale(1.4)"){
@@ -162,10 +152,10 @@ for (let i = 0; i<projectInfoButtons.length; i++){
 			reviewContent.style.paddingLeft = '1rem';
 			reviewContent.style.paddingRight = '1rem';
 			reviewContent.style.fontSize = '1.25rem';
-			reviewContent.style.zIndex = '5000';
+			// reviewContent.style.zIndex = '5000';
 			projectImage.style.transform='scale(.9)';
-			leftButton.style.visibility = "visible";
-			rightButton.style.visibility = "visible";
+			// leftButton.style.visibility = "visible";
+			// rightButton.style.visibility = "visible";
 			this.style.transform = 'scale(.8)';
 			this.style.transitionDuration= '1s';
 			this.style.marginBottom = '.5rem';
