@@ -661,10 +661,10 @@ aside button:hover, .projectDetails:hover{
 		margin-top: 24rem;
 	}
 	.carouselLeftNav{
-		margin-right: -12rem;
+		margin-right: -10.5rem;
 	}
 	.carouselRightButton {
-		margin-left: -12rem;
+		margin-left: -10.5rem;
 	}
 	nav{
 		display: block;
