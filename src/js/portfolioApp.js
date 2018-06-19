@@ -285,10 +285,15 @@ const videoUrl = document.querySelector('.allYourBase');
 
 easterEgg.addEventListener('click', function() {
 	console.log('clicked');
-if (allYourBaseVideo.className === 'hiddenVideo'){
+if (mobileView.matches){
+	console.log('mobile');
+	allYourBaseVideo.className = '.displayVideo';
+	videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano";
+}
+else if (allYourBaseVideo.className === 'hiddenVideo'){
 	console.log('hidden');
 	allYourBaseVideo.className = '.displayVideo';
-	videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano?autoplay=1"
+	videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano?autoplay=1";
 } else {
 	console.log('visible');
 	allYourBaseVideo.className = 'hiddenVideo';
