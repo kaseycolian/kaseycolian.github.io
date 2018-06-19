@@ -425,6 +425,19 @@ aside button:hover, .projectDetails:hover{
 .close:hover{
 	font-size: 2.75rem;
 }
+.hiddenVideo{
+	display: none;
+}
+.displayVideo{
+	display: inline;
+	/*z-index: 5;*/
+	/*width: 800; 
+	height: 600;*/
+}
+iframe{
+	width: 500px; 
+	height: 350px;
+}
 @media only screen and (min-width: 1450px){
 	.carousel{
 		grid-template-columns: .2fr .35fr .2fr;

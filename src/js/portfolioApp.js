@@ -276,3 +276,20 @@ function nextSlide(n) {
 function currentSlide(n) {  
 	displaySlides(slide_index = n);  
 }  
+
+
+//AllYourBase video
+const allYourBaseVideo = document.querySelector('.hiddenVideo');
+const easterEgg = document.querySelector('.easter__egg');
+
+easterEgg.addEventListener('click', function() {
+	console.log('clicked');
+if (allYourBaseVideo.className === 'hiddenVideo'){
+	console.log('hidden');
+	allYourBaseVideo.className = '.displayVideo';
+}else {
+	console.log('visible');
+	allYourBaseVideo.className = 'hiddenVideo';
+}
+
+});
