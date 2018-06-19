@@ -428,6 +428,9 @@ aside button:hover, .projectDetails:hover{
 .hiddenVideo{
 	display: none;
 }
+.easter__egg:hover{
+	transform: scale(1.02);
+}
 .displayVideo{
 	display: inline;
 	/*z-index: 5;*/
