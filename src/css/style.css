@@ -25,11 +25,13 @@ h1{
 }
 h2{
 	font-size: 2rem;
-	color: white;
 }
 h3{
 	font-size: 2rem;
 	color: white;
+}
+li{
+	list-style-type: none;		
 }
 .container{
 	display: grid;
@@ -42,7 +44,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-attachment: fixed;
-	background-size: 135%;
+	background-size: 155%;
 }
 .layer{
 	background-color: rgba(138, 0, 230, .1);
@@ -53,11 +55,6 @@ aside{
 }
 aside a:link{
 	color: white;
-}
-aside a:hover{
-	color: lightgrey;
-	font-size: scale(1.2);
-	position: absolute;
 }
 aside a:visited{
 	color: darkgrey;
@@ -75,10 +72,8 @@ nav{
 	font-size: 1.25em;
 	padding: .3em;
 	flex-wrap: wrap;
-	grid-column-end:1;
-	grid-column-start:0;
 }
-nav ul li a:hover{
+aside a:hover{
 	color: lightgrey;
 }
 .show-nav-button{
@@ -146,6 +141,10 @@ header{
 	flex-wrap: wrap;
 	font-size: 1.2em;
 }
+.salutation h2{
+	font-size: 3rem;
+	color: #E3E3E3;
+}
 .salutation p{
 	margin-top: .85rem;
 }
@@ -188,8 +187,8 @@ header{
 }
 .skills ul{
 	display: flex;
-	margin-left: 3rem;
-	margin-right: 3rem;
+    margin-left: 3rem;
+	/*margin-right: 3rem;*/
 	margin-top: 2rem;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -433,11 +432,9 @@ aside button:hover, .projectDetails:hover{
 }
 .displayVideo{
 	display: inline;
-	/*z-index: 5;*/
-	/*width: 800; 
-	height: 600;*/
 }
 iframe{
+	margin-top: 1rem;
 	width: 500px; 
 	height: 350px;
 }

@@ -73,11 +73,11 @@ const modal = document.getElementById('modalBox');
 const modalLink = document.getElementById('modalLink');
 const closeLink = document.getElementsByClassName("close")[0];
 
-modalLink.addEventListener("click", function (){
+modalLink.addEventListener("click", () => {
 	modal.style.display = "block";
 });
 
-closeLink.addEventListener("click", function() {
+closeLink.addEventListener("click", () => {
 	modal.style.display = "none";
 });
 
@@ -231,7 +231,7 @@ function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY){
 	}
 }
 
-leftButton.addEventListener('click', function(){
+leftButton.addEventListener('click', () => {
 	for (let i = 0; i<allContent.length; i++){
 		let reviewContent = document.getElementById(this.dataset.contentid);
 		
@@ -245,7 +245,7 @@ leftButton.addEventListener('click', function(){
 	displaySlides(slide_index+1);
 });
 
-rightButton.addEventListener('click', function () {
+rightButton.addEventListener('click', () => {
 	displaySlides(slide_index-1);
 });
 
@@ -278,25 +278,16 @@ function currentSlide(n) {
 }  
 
 
-//AllYourBase video - SWITCH TO TOGGLE CLASS
+//AllYourBase video
 const allYourBaseVideo = document.querySelector('.hiddenVideo');
 const easterEgg = document.querySelector('.easter__egg');
 const videoUrl = document.querySelector('.allYourBase');
 
-easterEgg.addEventListener('click', function() {
-	console.log('clicked');
-// if (mobileView.matches){
-// 	console.log('mobile');
-// 	allYourBaseVideo.className = '.displayVideo';
-// 	videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano?autoplay=1";
-// 	videoUrl.allow = "autoplay; encrypted-media";
-// }
+easterEgg.addEventListener('click', () => {
 	if (allYourBaseVideo.className === 'hiddenVideo'){
-		console.log('hidden');
 		allYourBaseVideo.className = '.displayVideo';
 		videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano?autoplay=1";
 	} else {
-		console.log('visible');
 		allYourBaseVideo.className = 'hiddenVideo';
 		videoUrl.src = "";
 	}
