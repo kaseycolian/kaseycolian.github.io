@@ -288,7 +288,8 @@ easterEgg.addEventListener('click', function() {
 if (mobileView.matches){
 	console.log('mobile');
 	allYourBaseVideo.className = '.displayVideo';
-	videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano";
+	videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano?autoplay=1";
+	videoUrl.allow = "autoplay; encrypted-media";
 }
 else if (allYourBaseVideo.className === 'hiddenVideo'){
 	console.log('hidden');
