@@ -278,18 +278,21 @@ function currentSlide(n) {
 }  
 
 
-//AllYourBase video
+//AllYourBase video - SWITCH TO TOGGLE CLASS
 const allYourBaseVideo = document.querySelector('.hiddenVideo');
 const easterEgg = document.querySelector('.easter__egg');
+const videoUrl = document.querySelector('.allYourBase');
 
 easterEgg.addEventListener('click', function() {
 	console.log('clicked');
 if (allYourBaseVideo.className === 'hiddenVideo'){
 	console.log('hidden');
 	allYourBaseVideo.className = '.displayVideo';
-}else {
+	videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano?autoplay=1"
+} else {
 	console.log('visible');
 	allYourBaseVideo.className = 'hiddenVideo';
+	videoUrl.src = "";
 }
 
 });
