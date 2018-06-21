@@ -1,0 +1,17 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[F\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C Kasey Colian Portfolio ES6 Transpiled\u001b[B\u001b[B",
+  "scripts": {
+    "babel": "babel portfolioApp.js --out-file portfolioApp-transpiled.js --presets=env"
+  },
+  "author": "Kasey Colian",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
