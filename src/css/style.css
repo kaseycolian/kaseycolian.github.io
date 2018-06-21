@@ -434,6 +434,8 @@ aside button:hover, .projectDetails:hover{
 	display: inline;
 }
 iframe{
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 3rem;
 	width: 650px; 
 	height: 475px;
@@ -522,7 +524,7 @@ iframe{
 		background-image: url(../../static/images/keyboardCropped.jpg);
 		background-position: center top;
 		background-attachment: fixed; 
-		background-size: 50rem 80rem;
+		background-size: 55rem 100rem;
 	}
 	.btn{
 		margin-bottom: 2.5rem;
@@ -688,6 +690,10 @@ iframe{
 	}
 }
 @media only screen and (max-width: 375px){
+	iframe{
+		width: auto;
+		height: auto;
+	}
 	.carouselLeftNav{
 		margin-right: -9rem;
 	}
