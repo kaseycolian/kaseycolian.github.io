@@ -82,7 +82,7 @@ aside a:hover{
 	top: 10rem;
 	height: 5.9rem;
 	width: 5.9rem;
-	background-image: radial-gradient(circle at center, black 80%, #FE80FE);
+	background-image: radial-gradient(circle at center, #13011f 80%, #FE80FE);
 	font-size: 1.40rem;
 	font-weight: bold;
 	transform: rotateX(28.5deg) rotateY(8deg) rotateZ(15deg);
