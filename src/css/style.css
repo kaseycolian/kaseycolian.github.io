@@ -437,6 +437,7 @@ iframe{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3rem;
+	margin-bottom: -5rem;
 	width: 650px; 
 	height: 475px;
 }
@@ -612,6 +613,9 @@ iframe{
 	.skills li{
 		margin-right: 0;
 	}
+	iframe{
+		margin-bottom: 0rem;
+	}
 	.contactinfo a {
 		margin-right: -.5rem;
 		margin-left: -.5rem;
@@ -693,6 +697,7 @@ iframe{
 	iframe{
 		width: 425px;
 		height: auto;
+		margin-bottom: 0rem;
 	}
 }
 @media only screen and (max-width: 375px){
