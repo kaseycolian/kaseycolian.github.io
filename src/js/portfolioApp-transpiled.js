@@ -77,7 +77,6 @@ function navMenuDisplay() {
 	navMenuScaling();
 }
 
-//modal box
 function modalDisplay() {
 	var modal = document.getElementById('modalBox');
 	var modalLink = document.getElementById('modalLink');
@@ -92,7 +91,6 @@ function modalDisplay() {
 	});
 }
 
-//project carousel
 function projectCarousel() {
 	var projectImages = document.querySelectorAll('.projectImages');
 	var projectInfoButtons = document.querySelectorAll('.projectDetails');
@@ -100,7 +98,6 @@ function projectCarousel() {
 	var rightButton = document.getElementById('right');
 	var mobileView = window.matchMedia('(max-width: 700px)');
 
-	//enlarging project images on click & descaling on click of image:
 	function enlargeProjectImagesOnEvents() {
 		for (var i = 0; i < projectImages.length; i++) {
 			if (!mobileView.matches) {
@@ -108,7 +105,6 @@ function projectCarousel() {
 			}
 		};
 
-		//rescaling project images on escape
 		function projectImageResizeOnEscape() {
 			var _loop = function _loop(_i) {
 				document.addEventListener('keydown', function (event) {
@@ -259,64 +255,53 @@ function projectCarousel() {
 			slides[slide_index].style.alignItems = "center";
 		}
 		
+		function initializeSlideFunctionMobile() {
+			var touchStartX = 0;
+			var touchEndX = 0;
+			var touchStartY = 0;
+			var touchEndY = 0;
+
+			//swipe left/right on project images for mobile
+			for (var i = 0; i < projectImages.length; i++) {
+				// let projectImage = document.getElementById(this.dataset.imageid);
+				projectImages[i].addEventListener('touchstart', function (event) {
+					// let gestureZone = document.getElementById(this.dataset.gestureZone);
+					touchStartX = event.changedTouches[0].screenX;
+					touchStartY = event.changedTouches[0].screenY;
+				}, false);
+				projectImages[i].addEventListener('touchend', function (event) {
+					touchEndX = event.changedTouches[0].screenX;
+					touchEndY = event.changedTouches[0].screenY;
+					handleGesture(touchStartX, touchEndX, touchStartY, touchEndY);
+				}, false);
+			}
+		}
+
+		function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY) {
+			var swipeRight = touchEndX - touchStartX > 175;
+			var swipeLeft = touchStartX - touchEndX > 175;
+			var swipeUp = touchStartY - touchEndY > 0;
+			var swipeDown = touchEndY - touchStartY > 0;
+			if (swipeRight) {
+				displaySlides(slide_index + 1);
+			}
+			if (swipeLeft) {
+				displaySlides(slide_index - 1);
+			}
+			if ((touchEndX - touchStartX > 0 || touchStartX - touchEndX > 0) && (swipeUp || swipeDown)) {
+				displaySlides(slide_index);
+			} else {
+				displaySlides(slide_index);
+			}
+		}
+		initializeSlideFunctionMobile();
 		browseCarousel();
 	}
-
-	function initializeSlideFunctionMobile() {
-		var touchStartX = 0;
-		var touchEndX = 0;
-		var touchStartY = 0;
-		var touchEndY = 0;
-
-		//swipe left/right on project images for mobile
-		for (var i = 0; i < projectImages.length; i++) {
-			// let projectImage = document.getElementById(this.dataset.imageid);
-			projectImages[i].addEventListener('touchstart', function (event) {
-				// let gestureZone = document.getElementById(this.dataset.gestureZone);
-				touchStartX = event.changedTouches[0].screenX;
-				touchStartY = event.changedTouches[0].screenY;
-			}, false);
-			projectImages[i].addEventListener('touchend', function (event) {
-				touchEndX = event.changedTouches[0].screenX;
-				touchEndY = event.changedTouches[0].screenY;
-				handleGesture(touchStartX, touchEndX, touchStartY, touchEndY);
-			}, false);
-		}
-	}
-
-	function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY) {
-		var swipeRight = touchEndX - touchStartX > 175;
-		var swipeLeft = touchStartX - touchEndX > 175;
-		var swipeUp = touchStartY - touchEndY > 0;
-		var swipeDown = touchEndY - touchStartY > 0;
-		if (swipeRight) {
-			displaySlides(slide_index + 1);
-		}
-		if (swipeLeft) {
-			displaySlides(slide_index - 1);
-		}
-		if ((touchEndX - touchStartX > 0 || touchStartX - touchEndX > 0) && (swipeUp || swipeDown)) {
-			displaySlides(slide_index);
-		} else {
-			displaySlides(slide_index);
-		}
-	}
-
-	function nextSlide(n) {
-		displaySlides(slide_index += n);
-	}
-
-	function currentSlide(n) {
-		displaySlides(slide_index = n);
-	}
-	
-	initializeSlideFunctionMobile();
 	projectInfoButtonsDisplay();
 	enlargeProjectImagesOnEvents();
 	projectCarouselDisplay();
 }
 
-//AllYourBase video
 function easterEggVideo() {
 	var allYourBaseVideo = document.querySelector('.hiddenVideo');
 	var easterEgg = document.querySelector('.easter__egg');
@@ -332,6 +317,7 @@ function easterEggVideo() {
 		}
 	});
 }
+
 easterEggVideo();
 projectCarousel();
 navMenuDisplay();

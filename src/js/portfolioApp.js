@@ -102,7 +102,6 @@ function projectCarousel(){
 	const mobileView = window.matchMedia('(max-width: 700px)');
 
 
-	//enlarging project images on click & descaling on click of image:
 	function enlargeProjectImagesOnEvents(){
 		for (let i = 0; i<projectImages.length; i++){
 			if (!(mobileView.matches)){
@@ -110,7 +109,6 @@ function projectCarousel(){
 			}
 		};
 
-		//rescaling project images on escape
 		function projectImageResizeOnEscape(){
 			for (let i = 0; i<projectImages.length; i++){
 				document.addEventListener('keydown', event=>{
@@ -145,17 +143,17 @@ function projectCarousel(){
 		let projectImage = document.getElementById(this.dataset.imageid);
 		//create a toggle to toggle between class enlarged (scale 1.2) & regular (scale 1.0)
 
-			if(this.style.transform === "scale(1.4)"){
-				this.style.transform ="scale(1.00)";
-				this.style.zIndex = '1';
-				leftButton.style.visibility = "visible";
-				rightButton.style.visibility = "visible";	
-			} else{
-				this.style.transform = 'scale(1.4)';
-				this.style.zIndex = '2';
-				leftButton.style.visibility="hidden";
-				rightButton.style.visibility="hidden";
-			}
+		if(this.style.transform === "scale(1.4)"){
+			this.style.transform ="scale(1.00)";
+			this.style.zIndex = '1';
+			leftButton.style.visibility = "visible";
+			rightButton.style.visibility = "visible";	
+		} else {
+			this.style.transform = 'scale(1.4)';
+			this.style.zIndex = '2';
+			leftButton.style.visibility="hidden";
+			rightButton.style.visibility="hidden";
+		}
 	}
 
 	function projectInfoButtonsDisplay(){
@@ -210,18 +208,14 @@ function projectCarousel(){
 		allContent = document.querySelectorAll('projectContent');
 	}
 
-
 	function initializeSlideFunctionMobile(){
 		let touchStartX = 0;
 		let touchEndX = 0;
 		let touchStartY = 0;
 		let touchEndY = 0;
 
-		//swipe left/right on project images for mobile
 		for (let i = 0; i<projectImages.length; i++){
-			// let projectImage = document.getElementById(this.dataset.imageid);
 			projectImages[i].addEventListener('touchstart', function(event){
-			// let gestureZone = document.getElementById(this.dataset.gestureZone);
 				touchStartX = event.changedTouches[0].screenX;
 				touchStartY = event.changedTouches[0].screenY;
 			}, false);
@@ -232,8 +226,6 @@ function projectCarousel(){
 			}, false);
 		}
 	}
-
-	
 
 	function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY){
 		const swipeRight = (touchEndX - touchStartX) > 175;
@@ -293,15 +285,6 @@ function projectCarousel(){
 		slides[slide_index].style.flexDirection = "column";
 		slides[slide_index].style.alignItems = "center";
 	}
-
-	function nextSlide(n) {  
-		displaySlides(slide_index += n);  
-	}  
-
-	function currentSlide(n) {  
-		displaySlides(slide_index = n);  
-	}
-
 	browseCarousel();  
 	initializeSlideFunctionMobile();
 	projectInfoButtonsDisplay();
@@ -309,7 +292,6 @@ function projectCarousel(){
 	projectCarouselDisplay();
 }
 
-//AllYourBase video
 function easterEggVideo(){
 	const allYourBaseVideo = document.querySelector('.hiddenVideo');
 	const easterEgg = document.querySelector('.easter__egg');
