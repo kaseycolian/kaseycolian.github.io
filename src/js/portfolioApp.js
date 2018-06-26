@@ -18,7 +18,7 @@ function navMenuDisplay(){
 	showButton.style.display="none";
 	
 
-	function hideSideNav(){
+	const hideSideNav = () =>{
 		button.addEventListener('click', function(){
 			navigation.style.display = "none";
 			showButton.style.display = "block";
@@ -32,8 +32,8 @@ function navMenuDisplay(){
 		});
 	}
 
-	function showSideNav(){
-		showButton.addEventListener('click', function(){
+	const showSideNav = () =>{
+		showButton.addEventListener('click', () =>{
 			navigation.style.display = "block";
 			inner.style.marginLeft = "0rem";
 			footer.style.marginLeft = "15rem";
@@ -42,7 +42,7 @@ function navMenuDisplay(){
 			document.getElementById('show-button').style.display = "none";
 		});
 
-		showButton.addEventListener('mouseenter', function(){
+		showButton.addEventListener('mouseenter', () => {
 			showButton.style.transform="scale(.90)";
 			showButton.style.right=".25rem";
 			showButton.style.transition = ".5s";
@@ -51,7 +51,7 @@ function navMenuDisplay(){
 			showButton.transitionTimingFunction="ease";
 		});
 
-		showButton.addEventListener('mouseout', function(){
+		showButton.addEventListener('mouseout', () => {
 			showButton.style.transform = "rotate(0deg) scale(1)";
 			showButton.style.transition = "3s";
 			showButton.style.fontSize="1.5rem";
@@ -60,7 +60,7 @@ function navMenuDisplay(){
 			showButton.style.position="block";
 		});
 	}
-	function navMenuScaling(){
+	const navMenuScaling = () => {
 		const listItems = document.querySelectorAll('nav ul li a');
 		listItems.forEach(function(listItem) {
 			listItem.addEventListener('mouseenter', function() {
@@ -78,7 +78,7 @@ function navMenuDisplay(){
 
 
 //modal box
-function modalDisplay(){
+const modalDisplay = () => {
 	const modal = document.getElementById('modalBox');
 	const modalLink = document.getElementById('modalLink');
 	const closeLink = document.getElementsByClassName("close")[0];
@@ -94,7 +94,7 @@ function modalDisplay(){
 
 
 //project carousel
-function projectCarousel(){
+const projectCarousel = () => {
 	const projectImages = document.querySelectorAll('.projectImages');
 	const projectInfoButtons = document.querySelectorAll('.projectDetails');
 	const leftButton = document.getElementById('left');
@@ -102,7 +102,7 @@ function projectCarousel(){
 	const mobileView = window.matchMedia('(max-width: 700px)');
 
 
-	function enlargeProjectImagesOnEvents(){
+	function enlargeProjectImagesOnEvents() {
 		for (let i = 0; i<projectImages.length; i++){
 			if (!(mobileView.matches)){
 				projectImages[i].addEventListener('click', enlargeProjectImages);
@@ -156,7 +156,7 @@ function projectCarousel(){
 		}
 	}
 
-	function projectInfoButtonsDisplay(){
+	const projectInfoButtonsDisplay = () => {
 		for (let i = 0; i<projectInfoButtons.length; i++){
 			projectInfoButtons[i].addEventListener('click', function(){
 
@@ -202,24 +202,24 @@ function projectCarousel(){
 		};
 	}
 
-	function projectCarouselDisplay(){
+	const projectCarouselDisplay = () => {
 		let slide_index = 1;  
 		displaySlides(slide_index);  
 		allContent = document.querySelectorAll('projectContent');
 	}
 
-	function initializeSlideFunctionMobile(){
+	const initializeSlideFunctionMobile = () => {
 		let touchStartX = 0;
 		let touchEndX = 0;
 		let touchStartY = 0;
 		let touchEndY = 0;
 
 		for (let i = 0; i<projectImages.length; i++){
-			projectImages[i].addEventListener('touchstart', function(event){
+			projectImages[i].addEventListener('touchstart', (event) => {
 				touchStartX = event.changedTouches[0].screenX;
 				touchStartY = event.changedTouches[0].screenY;
 			}, false);
-			projectImages[i].addEventListener('touchend', function(event){
+			projectImages[i].addEventListener('touchend', (event) => {
 				touchEndX = event.changedTouches[0].screenX;
 				touchEndY = event.changedTouches[0].screenY;
 				handleGesture(touchStartX, touchEndX, touchStartY, touchEndY);
@@ -227,7 +227,7 @@ function projectCarousel(){
 		}
 	}
 
-	function handleGesture(touchStartX, touchEndX, touchStartY, touchEndY){
+	const handleGesture = (touchStartX, touchEndX, touchStartY, touchEndY) => {
 		const swipeRight = (touchEndX - touchStartX) > 175;
 		const swipeLeft = (touchStartX - touchEndX) > 175;
 		const swipeUp = (touchStartY - touchEndY) > 0;
@@ -246,17 +246,17 @@ function projectCarousel(){
 		}
 	}
 
-	function browseCarousel(){
+	const browseCarousel = () => {
 		leftButton.addEventListener('click', () => {
-			for (let i = 0; i<allContent.length; i++) {
-				let reviewContent = document.getElementById(this.dataset.contentid);
+			// for (let i = 0; i<allContent.length; i++) {
+			// 	let reviewContent = document.getElementById(this.dataset.contentid);
 				
-				if (reviewContent.style.visibility=='visible') {
-					this.style.display='none';
-				} else {
-					this.style.visibility='hidden';
-				}
-			}
+			// 	if (reviewContent.style.visibility=='visible') {
+			// 		this.style.display='none';
+			// 	} else {
+			// 		this.style.visibility='hidden';
+			// 	}
+			// }
 			displaySlides(slide_index+1);
 		});
 
@@ -266,7 +266,7 @@ function projectCarousel(){
 	}
 	
 
-	function displaySlides(n) {  
+	const displaySlides = (n) => {  
 		let i;  
 		const slides = document.getElementsByClassName("showSlide");  
 		if (n > slides.length - 1) { 
@@ -292,18 +292,22 @@ function projectCarousel(){
 	projectCarouselDisplay();
 }
 
-function easterEggVideo(){
+const easterEggVideo = () => {
 	const allYourBaseVideo = document.querySelector('.hiddenVideo');
 	const easterEgg = document.querySelector('.easter__egg');
 	const videoUrl = document.querySelector('.allYourBase');
+	const videoRelativeLink = document.getElementById('easterEggPageLink');
 
 	easterEgg.addEventListener('click', () => {
 		if (allYourBaseVideo.className === 'hiddenVideo'){
 			allYourBaseVideo.className = '.displayVideo';
 			videoUrl.src = "https://www.youtube.com/embed/8fvTxv46ano?autoplay=1";
+			videoRelativeLink.href="#easterEggVideoStart"
+
 		} else {
 			allYourBaseVideo.className = 'hiddenVideo';
 			videoUrl.src = "";
+			videoRelativeLink.href="#skillslink";
 		}
 	});
 }

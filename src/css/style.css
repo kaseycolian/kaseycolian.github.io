@@ -433,6 +433,15 @@ aside button:hover, .projectDetails:hover{
 .close:hover{
 	transform: scale(1.2);
 }
+#easterEggPageLink:link{
+	color: white;
+}
+#easterEggPageLink:visited{
+	color: white;
+}
+#easterEggPageLink:hover{
+	color: white;
+}
 .hiddenVideo{
 	display: none;
 }
