@@ -543,7 +543,7 @@ iframe{
 		background-image: url(../../static/images/keyboardCropped.jpg);
 		background-position: center top;
 		background-attachment: fixed; 
-		background-size: 55rem 100rem;
+		background-size: 55rem auto;
 	}
 	.btn{
 		margin-bottom: 2.5rem;
@@ -698,12 +698,11 @@ iframe{
 		display: none;
 	}
 	footer{
-		display: flex;
-		flex-direction: row;
-		padding-left: 1rem;
+		display: grid;
+		grid-template-columns: 15% auto 15%;
+    	padding-left: 1rem;
 		padding-right: 1rem;
 		flex-wrap: wrap;
-		justify-content: center;
 		text-align: center;
 		margin-left: 0rem;
 	}
@@ -716,6 +715,16 @@ iframe{
 		width: 425px;
 		height: auto;
 		margin-bottom: 0rem;
+	}
+	.skills li {
+		display: flex;
+   		flex-direction: column;
+   		justify-content: center;
+	}
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 }
 @media only screen and (max-width: 375px){
