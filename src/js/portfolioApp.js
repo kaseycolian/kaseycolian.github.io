@@ -18,7 +18,7 @@ function navMenuDisplay(){
 	showButton.style.display="none";
 	
 
-	const hideSideNav = () =>{
+	const hideSideNav = () => {
 		button.addEventListener('click', function(){
 			navigation.style.display = "none";
 			showButton.style.display = "block";
@@ -32,7 +32,7 @@ function navMenuDisplay(){
 		});
 	}
 
-	const showSideNav = () =>{
+	const showSideNav = () => {
 		showButton.addEventListener('click', () =>{
 			navigation.style.display = "block";
 			inner.style.marginLeft = "0rem";
