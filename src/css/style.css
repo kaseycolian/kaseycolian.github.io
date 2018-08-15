@@ -543,7 +543,7 @@ iframe{
 		background-image: url(../../static/images/keyboardCropped.jpg);
 		background-position: center top;
 		background-attachment: fixed; 
-		background-size: 55rem auto;
+		background-size: 60rem auto;
 	}
 	.btn{
 		margin-bottom: 2.5rem;
@@ -619,7 +619,7 @@ iframe{
 		display: grid;
 		margin: 0;
 		grid-template-columns: 1fr 1fr;
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 		margin-left: 3rem;
 		margin-right: 3rem;
 		grid-gap: 1.1rem;
