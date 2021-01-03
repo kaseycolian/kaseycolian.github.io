@@ -549,8 +549,6 @@ iframe{
 	title{
 		display: none;
 	}
-	.layer{
-	}
 	h2{
 		font-size: 3rem;
 	}
@@ -623,6 +621,10 @@ iframe{
 	#desktopBioImage{
 		display: none;
 	}
+	.skills{
+		display: block;
+		margin-top: 6rem;
+	}
 	.skills h2{
 		font-size: 3rem;
 	}
@@ -640,14 +642,14 @@ iframe{
 		grid-gap: 1.1rem;
 		text-align: center
 	}
-	.skills{
-		display: block;
-	}
 	.skills li{
 		margin-right: 0;
 	}
 	iframe{
 		margin-bottom: 0rem;
+	}
+	.contactinfo{
+		margin-top: 6rem;
 	}
 	.contactinfo a {
 		margin-right: -.5rem;
@@ -659,7 +661,6 @@ iframe{
 	}
 	.contactinfo h2{
 		display: flex;
-		margin-top: 2rem;
 		text-align: center;
 		font-size: 3rem;
 		margin-left: 2rem;
@@ -667,9 +668,9 @@ iframe{
 	}
 	.contact__links{
 		justify-content: center;
-		margin-bottom: 0rem;
-		margin-top: 0rem;
 		flex-wrap: wrap;
+		margin-bottom: 3rem;
+		margin-top: 0rem;
 	}
 	.projectDetails {
    		margin-bottom: 4rem;
@@ -677,6 +678,7 @@ iframe{
 	.projectHead{
 		margin-top: 1.75rem;
 		margin-bottom: 0;
+		padding-top: 1.5rem;
 	}
 	.content{
 		margin-right: .5rem;
