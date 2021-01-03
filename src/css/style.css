@@ -33,11 +33,19 @@ h3{
 li{
 	list-style-type: none;		
 }
+.hl{
+	width: 35%;
+    margin: auto;
+    margin-bottom: 3rem;
+    background: radial-gradient(circle at center, rgb(243 123 252) -7%, rgba(159, 7, 108, 1));
+    border-radius: 1em;
+    padding: 0.3rem;
+}
 .container{
 	display: grid;
 	grid-template-columns: 14rem auto;
 	grid-template-rows: 8rem 1fr 2rem;
-	color: white;
+	color: white;	
 }
 body{
 	background-image: url(../../static/images/keyboard.jpeg);
@@ -112,6 +120,7 @@ header{
 	flex-direction: column;
 	align-self: center;
 	justify-content: center;
+	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 }
 .header__name{
 	align-self: center;
@@ -142,11 +151,12 @@ header{
 	font-size: 1.2em;
 }
 .salutation h2{
-	font-size: 3rem;
-	color: #E3E3E3;
+	font-size: 3rem;	
+	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 }
 .salutation p{
 	margin-top: .85rem;
+	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 }
 .bio img{
 	height: 27rem;
@@ -177,13 +187,13 @@ header{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 3rem;
+	margin-top: 11rem;
 }
 .skills h2{
 	font-size: 3.7rem;
 	display:flex;
 	justify-content: center;
-	color: #E3E3E3;
+	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 }
 .skills ul{
 	display: flex;
@@ -192,26 +202,27 @@ header{
 	margin-top: 2rem;
 	flex-wrap: wrap;
 	justify-content: center;
-	font-size: 2.85rem;
+	font-size: 2rem;
 	font-weight: bold;
 }
 ul, menu, dir {
 	-webkit-padding-start: 0rem;
 }
 .skills li{
-	margin-right: 2em;
+	margin-right: 2.5em;
 	word-break: keep-all;
-	list-style-type: none;
+	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 }
 .contactinfo{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 	margin-bottom: 1.5em;
+	margin-top: 11rem;
 }
 .contactinfo h2{
 	font-size: 3.7rem;
-	margin-top: 11rem;
 }
 .contactinfo a {
 	margin-right: 4em;
@@ -280,6 +291,7 @@ footer{
 	margin-left: 15rem;
 	padding-right: 1rem;
 	color: white;
+	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 	font-size: 1rem;
 }
 aside button, .projectDetails{
@@ -325,7 +337,7 @@ aside button:hover, .projectDetails:hover{
 .projectHead{
 	display: flex;
 	justify-content: center;
-	margin-top: 3rem;
+	margin-top: 4rem;
 	margin-bottom: 2.25rem;
 }
 .projectHead h2{
@@ -415,6 +427,9 @@ aside button:hover, .projectDetails:hover{
 	color: black;
 	max-height: 100vh;
 	z-index:2000;
+}
+.modal-content p{
+	margin-top: .85rem;
 }
 .md-modal{
 	height: 100%;

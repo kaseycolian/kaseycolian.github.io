@@ -10,8 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="src/css/style.css">
 </head>
 
-	<body>
-		<div class = "layer">
+<body>
+	<div class = "layer">
 		<aside>
 			<div id="navigation" style="visibility: visible;">
 				<nav>
@@ -25,162 +25,167 @@
 					</ul>
 				</nav>
 			</div>
-
 		</aside>
-	<div class="container" id = "container">
-		<header>
-			<div class = "header" id = "header">
-				<a name= "homelink"></a>
-				<div class="header__name">
-					<h1>Kasey Colian</h1>
+		<div class="container" id = "container">
+			<header>
+				<div class = "header" id = "header">
+					<a name= "homelink"></a>
+					<div class="header__name">
+						<h1>Kasey Colian</h1>
+					</div>
+					<div class="header__role">
+						<h3>Software Developer</h3>
+					</div>
 				</div>
-				<div class="header__role">
-					<h3>Junior Software Developer</h3>
+			</header>
+
+			<div class="inner" id = "inner">
+				<main>
+					<section class = bio>
+						<div class="bioImageMobile">
+							<img src="static/images/kaseytwo.jpg" alt="Kasey Colian"> 
+						</div>
+						<div class="salutation">
+							<h2>About me</h2>
+							<p>A software developer who believes technology should be fun and intuitive to use.  From test automation, backend website development, to creating UIs in my personal time, I feel technology is a world that can revolve around human instinct.  A graduate from We Can Code IT!, an full-stack Java coding bootcamp, I learn best by diving into a problem and discovering a solution that would be best for the situation.  Just because it works, doesn't mean it's the right solution.</p>
+							<p>Some of my experience includes working on a team to create a banking website using .NET Framework and Sitecore CMS, writing automated tests using Ruby as part of a QA team for a warehouse execution system, and being the sole member of a QA team designing test suites for API integration and browser automation while using .NET Core for a customer-facing portal.</p>
+							<p>I obtained a bachelor's degree in Psychology from Kent State University focused on cognitive development, which provides insight on real-world user mentality.  I've also been a user acceptance tester, testing prototype websites and applications for various companies, including a mobile game for EA Sports before being released to the Google Play Store.  The world depends on technology and I am dedicated to making intuitive technology that contributes to a better experience.</p>
+						</div>
+						<div class="bioImage">
+							<img src="static/images/kaseytwo.jpg" alt="Kasey Colian's profile image" id = "desktopBioImage"> 
+						</div>
+					</section>
+					<a name="skillslink"></a>
+					<section class = skills>
+						<section class = skillsList>
+							<div class = hl></div>
+							<h2>Tech Stack</h2>
+							<ul>
+								<li>.NET Core & Framework</li>
+								<li>XUnit Testing Framework</li>
+								<li>Sitecore</li>
+								<li>SpecFlow+ Runner</li>
+								<li>Selenium Webdriver</li>
+								<li>BrowserStack Automate & Live</li>
+								<li>Ruby</li>
+								<li>JavaScript</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li class = "easter__egg"><a href = "#easterEggVideoStart" id="easterEggPageLink">Unicorn Serialization</a><a name = "easterEggVideoStart"></a></li>
+								<li>JSON</li>
+								<li>GitHub</li>
+								<li>Azure DevOps</li>
+								<li>Agile Development</li>
+								<li>Pair Programming</li>					
+							</ul>						
+							<div class = "hiddenVideo">
+								<iframe class = "allYourBase" src="" allow = "autoplay; encrypted-media" id = allYourBase></iframe>
+							</div>
+						</section>
+						<a name="contactinfolink"></a>
+						<section class = "contactinfo">
+							<div class = hl></div>
+							<h2>Contact Information</h2>
+							<div class="contact__links">
+								<a href="https://github.com/kaseycolian"><img src="static/images/github_white.png" alt="GitHub Account"></a>			
+								<a href="https://www.linkedin.com/in/kaseycolian/"><img src="static/images/linkedin-white.png" alt="LinkedIn Profile"></a>
+								<a href="mailto:kaseycolian@gmail.com"><img src="static/images/email-whit.png" alt="Email Address"></a>
+							</div>
+						</section>
+					</section>
+				</main>
+				<article class ="projectSection">
+					<a name="projectslink"></a>
+					<div class = "projectHead">
+						<h2>Bootcamp Projects</h2>
+					</div>
+					<div class = "carousel">
+					<div class = "carouselLeftNav">
+						<button class="carouselNavButton" id="left"><</button>
+					</div>
+						<div class = "projectContainer">
+						<article class="project" id = "gardenProject">
+							<div class="showSlide">
+								<img class = "projectImages" id = "gardenImage" data-gestureZone = 'gardenImageZone' src="static/images/watchCropped2.jpg" alt="Screenshot of Watch Your Garden Grow Project"><a name="gardenProjectStart"></a>
+								<div class="content">
+									<h3>Watch Your Garden Grow</h3>
+									<a href="#gardenProjectStart"><button class="projectDetails" data-contentid = 'garden' data-imageid = 'gardenImage'>Show Project Details</button></a>
+									<div class ="projectContent" id = 'garden' style="visibility: hidden; display: none;">
+										<p>Three week project created on a team of 7 at We Can Code IT.  Developed through Agile methodologies and pair programming using SCRUM.  Users are able to enter their zip code to return plants available for their plant habitable zone using an AJAX call, returning JSON objects.  The users are able to see more details on each plant, displayed in a modal window.  Plants can be added and removed from the desired plan, which is then generated with the appropriate planting date for their zip code.</p>
+										<p>My role focused entirely on the front end.  The main view is designed using a responsive layout for the returned objects from the AJAX call, so that no matter how many or little plants were returned for the zip code, the view was easy to navigate.  The layout was designed using CSS3 and DOM manipulation through Vanilla JavaScript without the assistance of any frameworks.  At the end of each 3-day sprint, the front end was able to present a minimal viable product using the features designed from the back end.  The back end was created through Java, JPA relational mapping, Spring MVC, and rest controllers to fuel the front end.</p>
+										<button class="btn"><a href="https://github.com/watch-your-garden-grow/watch-your-garden-grow" target= "_blank">See Full Project Here</a></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="project" id = "musicProject">
+							<div class="showSlide"> 						
+								<img class = "projectImages" id = "reviewsImage" data-gestureZone = 'reviewImageZone' src="static/images/ReviewsFull.jpg" alt="Screenshot of Reviews Project"><a name= "musicProjectStart"></a>
+								<div class="content">
+									<h3>Music Artists Reviews</h3>
+									<a href="#musicProjectStart"><button class="projectDetails" data-contentid = 'musicReviews' data-imageid = 'reviewsImage'>Show Project Details</button></a>
+									<div class="projectContent" id = 'musicReviews' style="visibility: hidden; display: none;">
+										<p> Music Reviews was a project involving the creation of a website through SpringMVC, using TDD, Java and the creation of a database with JPA.  The front was designed in Thymeleaf, using Flexbox and Grid in CSS while applying AJAX and Javascript.  The data for the views is accessed through a Spring Controller.  Musical artists are `organized by genre.  Users are able to create comments to be displayed on each musical artist's page. Artists were also organized by tags which users are able to create and delete from each artist's page using AJAX.  Each tag will direct user to all artists associated with that tag.</p>
+										<p>This project was created in 3 weekend iterations as a project assignment for We Can Code IT.</p>
+										<button class="btn"><a href="https://github.com/kaseycolian/reviewsFull" target= "_blank">See Full Project Here</a></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="project" id = "amokProject">
+							<div class="showSlide">						
+								<img class = "projectImages" id = "amokImage" data-gestureZone = 'amokeImageZone' src="static/images/lair-amok-java.jpg" alt="Screenshot of Medieval Lair Amok Project"><a name="amokProjectStart"></a>
+								<div class="content">
+									<h3>Virtual Medieval Lair Amok</h3>
+									<a href="#amokProjectStart"><button class="projectDetails" data-contentid = 'lairAmok' data-imageid = 'amokImage'>Show Project Details</button></a>
+									<div class ="projectContent" id = 'lairAmok' style="visibility: hidden; display: none;">
+										<p>Upgraded version of Virtual Medieval Lair.  Written in Java by TDD.  Implemented interfaces and extended classes to create different abilities for different types of creatures.  Game started with an already-programmed list of creatures and allowed the game player to add or remove creature. Introduced new levels that the game player needs control.</p>
+										<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-amok" target= "_blank">See Full Project Here</a></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						
+						<article class="project" id = "lairProject">
+							<div class="showSlide">
+							<a name= "projectStart"></a>
+								<img class = "projectImages" id ='lairImage' data-gestureZone = 'lairImageZone' src="static/images/previous-lair-java.jpg" alt="Screenshot of Virtual Medieval Lair Project">
+								<div class="content">
+									<h3>Virtual Medieval Lair</h3>
+									<button class="projectDetails" data-contentid = 'lair' data-imageid = 'lairImage'>Show Project Details</button> 
+									<div class ="projectContent" id = 'lair' style="visibility: hidden; display: none;">
+										<p>One of the first Java programs I created.  Written in Java by TDD.  User participated in a virtual pet game taking care of creatures at The Lair through the console.  The creatures were stored in a HashMap via name as the key.  Players are able to care for the different creatures, which effect different levels simultaneously.  At the end of each round, a tick effect was applied effecting all levels of each creature.  Users are able to add and remove creatures.</p>
+										<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-shelter" target= "_blank">See Full Project Here</a></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						</div>
+						<div class = "carouselRightButton">
+						<button class="carouselNavButton" id="right">></button> 
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+		<footer id="footer">
+			<p>2018</p>	
+			<p>Website written with HTML5, CSS3, and JavaScript without frameworks</p>
+			<div class="home__link__footer">
+				<a href="#homelink" id="startLink">Back to the start</a>
+			</div>
+		</footer>
+		<div id="modalBox" class="modal">
+			<div class="md-modal md-effect-5" id="modal-1">
+				<div class="modal-content">
+					<span class="close">&times</span>
+					<p>A software developer who believes technology should be fun and intuitive to use.  From test automation, backend website development, to creating UIs in my personal time, I feel technology is a world that can revolve around human instinct.  A graduate from We Can Code IT!, an full-stack Java coding bootcamp, I learn best by diving into a problem and discovering a solution that would be best for the situation.  Just because it works, doesn't mean it's the right solution.</p>
+					<p>Some of my experience includes working on a team to create a banking website using .NET Framework and Sitecore CMS, writing automated tests using Ruby as part of a QA team for a warehouse execution system, and being the sole member of a QA team designing test suites for API integration and browser automation while using .NET Core for a customer-facing portal.</p>
+					<p>I obtained a bachelor's degree in Psychology from Kent State University focused on cognitive development, which provides insight on real-world user mentality.  I've also been a user acceptance tester, testing prototype websites and applications for various companies, including a mobile game for EA Sports before being released to the Google Play Store.  The world depends on technology and I am dedicated to making intuitive technology that contributes to a better experience.</p>
 				</div>
 			</div>
-		</header>
-
-		<div class="inner" id = "inner">
-			<main>
-				<section class = bio>
-					<div class="bioImageMobile">
-						<img src="static/images/kaseytwo.jpg" alt="Kasey Colian"> 
-					</div>
-					<div class="salutation">
-						<h2>About me</h2>
-						<p>Junior software developer who believes the world is a village and we each have our roles to make a better life for all.  My passion, my role, is optimizing user experience. Software development and front end design provide an outlet that allow me to create technology products which revolve around human intuition.   Recently graduated from We Can Code IT!, an intensive 14-week program focusing on Java, TDD, frameless web-design using HTML5, CSS3, and pure Javascript. I obtained a bachelor's degree in Psychology from Kent State University focused on cognitive development, which provides insight on real-world user mentality.  I've also been a user acceptance tester, testing prototype websites and applications for various companies, including a mobile game for EA Sports before being released to the Google Play Store.  The world depends on technology and I am dedicated to making it a better place for all.</p>
-					</div>
-					<div class="bioImage">
-						<img src="static/images/kaseytwo.jpg" alt="Kasey Colian" id = "desktopBioImage"> 
-					</div>
-				</section>
-				<a name="skillslink"></a>
-				<section class = skills>
-					<section class = skillsList>
-						<h2>Tech Stack</h2>
-						<ul>
-							<li>JavaScript</li>
-							<li>Java</li>
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>Grid</li>
-							<li>Flexbox</li>
-							<li>Node.js</li>
-							<li>Webpack</li>
-							<li>TDD in Java</li>
-							<li>JPA & Hibernate</li>
-							<li class = "easter__egg"><a href = "#easterEggVideoStart" id="easterEggPageLink">AJAX</a><a name = "easterEggVideoStart"></a></li>
-							<li>JSON</li>
-							<li>Spring MVC</li>		
-							<li>Thymeleaf</li>												
-							<li>REST Controllers</li>
-							<li>GitHub</li>
-							<li>Agile Development</li>
-							<li>Pair Programming</li>					
-						</ul>						
-						<div class = "hiddenVideo"><iframe class = "allYourBase" src="" allow = "autoplay; encrypted-media" id = allYourBase></iframe></div>
-					</section>
-					<a name="contactinfolink"></a>
-					<section class = "contactinfo">
-						<h2>Contact Information</h2>
-						<div class="contact__links">
-							<a href="https://github.com/kaseycolian"><img src="static/images/github_white.png" alt="GitHub Account"></a>			
-							<a href="https://www.linkedin.com/in/kaseycolian/"><img src="static/images/linkedin-white.png" alt="LinkedIn Profile"></a>
-							<a href="mailto:kaseycolian@gmail.com"><img src="static/images/email-whit.png" alt="Email Address"></a>
-						</div>
-					</section>
-				</section>
-			</main>
-			<article class ="projectSection">
-				<a name="projectslink"></a>
-				<div class = "projectHead">
-					<h2>Previous Projects</h2>
-				</div>
-				<div class = "carousel">
-				<div class = "carouselLeftNav">
-					<button class="carouselNavButton" id="left"><</button>
-				</div>
-					<div class = "projectContainer">
-					<article class="project" id = "gardenProject">
-						<div class="showSlide">
-							<img class = "projectImages" id = "gardenImage" data-gestureZone = 'gardenImageZone' src="static/images/watchCropped2.jpg" alt="Screenshot of Watch Your Garden Grow Project"><a name="gardenProjectStart"></a>
-							<div class="content">
-								<h3>Watch Your Garden Grow</h3>
-								<a href="#gardenProjectStart"><button class="projectDetails" data-contentid = 'garden' data-imageid = 'gardenImage'>Show Project Details</button></a>
-								<div class ="projectContent" id = 'garden' style="visibility: hidden; display: none;">
-									<p>Three week project created on a team of 7 at We Can Code IT.  Developed through Agile methodologies and pair programming using SCRUM.  Users are able to enter their zip code to return plants available for their plant habitable zone using an AJAX call, returning JSON objects.  The users are able to see more details on each plant, displayed in a modal window.  Plants can be added and removed from the desired plan, which is then generated with the appropriate planting date for their zip code.</p>
-									<p>My role focused entirely on the front end.  The main view is designed using a responsive layout for the returned objects from the AJAX call, so that no matter how many or little plants were returned for the zip code, the view was easy to navigate.  The layout was designed using CSS3 and DOM manipulation through Vanilla JavaScript without the assistance of any frameworks.  At the end of each 3-day sprint, the front end was able to present a minimal viable product using the features designed from the back end.  The back end was created through Java, JPA relational mapping, Spring MVC, and rest controllers to fuel the front end.</p>
-									<button class="btn"><a href="https://github.com/watch-your-garden-grow/watch-your-garden-grow" target= "_blank">See Full Project Here</a></button>
-								</div>
-							</div>
-						</div>
-					</article>
-					<article class="project" id = "musicProject">
-						<div class="showSlide"> 						
-							<img class = "projectImages" id = "reviewsImage" data-gestureZone = 'reviewImageZone' src="static/images/ReviewsFull.jpg" alt="Screenshot of Reviews Project"><a name= "musicProjectStart"></a>
-							<div class="content">
-								<h3>Music Artists Reviews</h3>
-								<a href="#musicProjectStart"><button class="projectDetails" data-contentid = 'musicReviews' data-imageid = 'reviewsImage'>Show Project Details</button></a>
-								<div class="projectContent" id = 'musicReviews' style="visibility: hidden; display: none;">
-									<p> Music Reviews was a project involving the creation of a website through SpringMVC, using TDD, Java and the creation of a database with JPA.  The front was designed in Thymeleaf, using Flexbox and Grid in CSS while applying AJAX and Javascript.  The data for the views is accessed through a Spring Controller.  Musical artists are `organized by genre.  Users are able to create comments to be displayed on each musical artist's page. Artists were also organized by tags which users are able to create and delete from each artist's page using AJAX.  Each tag will direct user to all artists associated with that tag.</p>
-									<p>This project was created in 3 weekend iterations as a project assignment for We Can Code IT.</p>
-									<button class="btn"><a href="https://github.com/kaseycolian/reviewsFull" target= "_blank">See Full Project Here</a></button>
-								</div>
-							</div>
-						</div>
-					</article>
-					<article class="project" id = "amokProject">
-						<div class="showSlide">						
-							<img class = "projectImages" id = "amokImage" data-gestureZone = 'amokeImageZone' src="static/images/lair-amok-java.jpg" alt="Screenshot of Medieval Lair Amok Project"><a name="amokProjectStart"></a>
-							<div class="content">
-								<h3>Virtual Medieval Lair Amok</h3>
-								<a href="#amokProjectStart"><button class="projectDetails" data-contentid = 'lairAmok' data-imageid = 'amokImage'>Show Project Details</button></a>
-								<div class ="projectContent" id = 'lairAmok' style="visibility: hidden; display: none;">
-									<p>Upgraded version of Virtual Medieval Lair.  Written in Java by TDD.  Implemented interfaces and extended classes to create different abilities for different types of creatures.  Game started with an already-programmed list of creatures and allowed the game player to add or remove creature. Introduced new levels that the game player needs control.</p>
-									<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-amok" target= "_blank">See Full Project Here</a></button>
-								</div>
-							</div>
-						</div>
-					</article>
-					
-					<article class="project" id = "lairProject">
-						<div class="showSlide">
-						<a name= "projectStart"></a>
-							<img class = "projectImages" id ='lairImage' data-gestureZone = 'lairImageZone' src="static/images/previous-lair-java.jpg" alt="Screenshot of Virtual Medieval Lair Project">
-							<div class="content">
-								<h3>Virtual Medieval Lair</h3>
-								<button class="projectDetails" data-contentid = 'lair' data-imageid = 'lairImage'>Show Project Details</button> 
-								<div class ="projectContent" id = 'lair' style="visibility: hidden; display: none;">
-									<p>One of the first Java programs I created.  Written in Java by TDD.  User participated in a virtual pet game taking care of creatures at The Lair through the console.  The creatures were stored in a HashMap via name as the key.  Players are able to care for the different creatures, which effect different levels simultaneously.  At the end of each round, a tick effect was applied effecting all levels of each creature.  Users are able to add and remove creatures.</p>
-									<button class="btn"><a href="https://github.com/kaseycolian/virtual-pet-shelter" target= "_blank">See Full Project Here</a></button>
-								</div>
-							</div>
-						</div>
-					</article>
-					</div>
-					<div class = "carouselRightButton">
-					<button class="carouselNavButton" id="right">></button> 
-					</div>
-				</div>
-			</article>
 		</div>
 	</div>
-<footer id="footer">
-	<p>2018</p>	
-	<p>Website written with HTML5, CSS3, and JavaScript without frameworks</p>
-	<div class="home__link__footer">
-		<a href="#homelink" id="startLink">Back to the start</a>
-	</div>
-</footer>
-<div id="modalBox" class="modal">
-	<div class="md-modal md-effect-5" id="modal-1">
-		<div class="modal-content">
-			<span class="close">&times</span>
-			<p>Junior software developer who believes the world is a village and we each have our roles to make a better life for all.  My passion, my role, is optimizing user experience. Software development and front end design provide an outlet that allow me to create technology products which revolve around human intuition.   Recently graduated from We Can Code IT!, an intensive 14-week program focusing on Java, TDD, frameless web-design using HTML5, CSS3, and pure Javascript. I obtained a bachelor's degree in Psychology from Kent State University focused on cognitive development, which provides insight on real-world user mentality.  I've also been a user acceptance tester, testing prototype websites and applications for various companies, including a mobile game for EA Sports before being released to the Google Play Store.  The world depends on technology and I am dedicated to making it a better place for all.<p>
-		</div>
-	</div>
-</div>
-</div>
 	<script src="./src/js/portfolioApp.js"></script>	
 	<script src="./src/js/polyfill.min.js"></script>	
 </body>
