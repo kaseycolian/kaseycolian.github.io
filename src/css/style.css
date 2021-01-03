@@ -110,9 +110,6 @@ aside a:hover{
 header{ 
 	grid-column-start:1;
 	grid-column-end: -1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin-left: 14rem;
 }
 .header{
@@ -567,14 +564,8 @@ iframe{
 		margin: 0;
 	}
 	header{
-		grid-column-start: 1;
-		grid-column-end: -1;
-		display: flex;
 		margin-left: 0;
-		grid-column-start: 0; 
-		grid-column-end: 0; 
-		display: flex;
-		justify-content: center;
+		padding-top: 1rem;
 	}
 	.header__name{
 		margin-top: 0;
