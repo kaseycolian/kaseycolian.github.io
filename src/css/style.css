@@ -152,7 +152,7 @@ header{
 	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 }
 .salutation p{
-	margin-top: .85rem;
+	padding: .5rem 0rem .5rem 0rem;
 	text-shadow: -1.25px -1.25px #000, 1.25px -1.25px #000, -1.25px 1.25px #000, 1.25px 1.25px #000;
 }
 .bio img{
@@ -391,7 +391,7 @@ aside button:hover, .projectDetails:hover{
 		background: radial-gradient(circle at center, black 77%, rgba(191, 70, 225, 1));
 	}50% {
 		box-shadow: 0 0 5px rgba(191, 70, 225, 1);
-		background: radial-gradient(circle at center, black 70%, rgba(191, 70, 225, .6)));
+		background: radial-gradient(circle at center, black 70%, rgba(191, 70, 225, .6));
 	} 100% {
 		box-shadow: 0 0 23px rgba(191, 70, 225, 1);
 		background: radial-gradient(circle at center, black 77%,  rgba(191, 70, 225, 1));
@@ -594,6 +594,9 @@ iframe{
 		margin-right: 1rem;
 		margin-bottom: 1rem;
 		text-align: center
+	}
+	.salutation p{
+		padding: .6rem 0rem .6rem 0rem;
 	}
 	.bioImageMobile{
 		display: flex;
